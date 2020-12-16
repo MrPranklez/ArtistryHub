@@ -25,20 +25,3 @@
     margin-right: 0;
   }
 }
-
-@mixin make-col-old($cols: 4, $gap: 20px) {
-  @include fix;
-
-  > * {
-    display: block;
-    float: left;
-    margin-bottom: $gap;
-    margin-right: $gap;
-    min-height: 50px;
-    width: calc(calc(100% - #{($cols - 1) * $gap}) / #{$cols});
-  }
-
-  > *:nth-child(#{$cols}n + 0) {
-    margin-right: 0;
-  }
-}
