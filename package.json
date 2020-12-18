@@ -1,17 +1,17 @@
 {
-  "name": "optimized-base-webfolder",
+  "name": "artistry-hub",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm-run-all --parallel sass-dev server-dev",
-    "sass-dev": "sass ./src/css/styles.scss ./dist/style.css --watch",
+    "sass-dev": "sass ./src/css/styles.scss ./src/css/style.css --watch",
     "server-dev": "live-server",
     "build": "npm-run-all --serial clean sass-prod",
     "clean": "rm -r ./dist/",
     "sass-prod": "sass ./src/css/styles.scss ./dist/style.css --no-source-map --style=compressed",
-    "deploy": "surge . --domain https://artistry-hub.surge.sh"
+    "deploy": "surge . --add peter.vrancken88@gmail.com --domain https://artistry-hub.surge.sh"
   },
   "keywords": [],
   "author": "",
