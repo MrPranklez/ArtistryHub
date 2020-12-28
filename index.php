@@ -12,7 +12,7 @@
 </head>
 <body>
 <nav class="navbar navbar-light bg-danger container d-flex">
-    <svg class="icon icon-alphabet_96900" fill="white"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-alphabet_96900"></use></svg>
+    <svg class="icon icon-alphabet_96900" height="40" width="40" fill="white"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-alphabet_96900"></use></svg>
     <a class="navbar-brand text-white flex-grow-1 ml-2">ArtistryHub</a>
     <button class="btn btn-outline-light mr-2" type="submit"><a href="index.php">HOME</a></button>
     <button class="btn btn-outline-light mr-2" type="submit"><a href="management.php">MANAGEMENT</a></button>
@@ -27,9 +27,11 @@
 <section class="container pt-3 pb-3 bg-dark"></section>
 <footer class="container pb-5 bg-dark">
     <img class="img-fluid" src="./img/banner%20drummer.jpg">
+    <h1>GET IT DONE</h1>
     <div class="d-flex">
-        <svg class="icon icon-facebook2"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-facebook2"></use></svg>
-        <h1>GET IT DONE</h1>
+        <svg class="icon icon-facebook2" height="60" width="60"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-facebook2"></use></svg>
+        <svg class="icon icon-twitter" height="60" width="60"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-twitter"></use></svg>
+        <h2 class="pt-4 text-white">CONTACT</h2>
     </div>
 </footer>
 <script src="./src/css/base/Icons/svgxuse.js"></script>
