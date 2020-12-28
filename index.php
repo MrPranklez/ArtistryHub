@@ -8,6 +8,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css"/>
 </head>
 <body>
 <nav class="navbar navbar-light bg-danger container d-flex">
@@ -16,10 +17,10 @@
         <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z"/>
     </svg>
     <a class="navbar-brand text-white flex-grow-1 ml-2">ArtistryHub</a>
-    <button class="btn btn-outline-light mr-2" type="submit">HOME</button>
-    <button class="btn btn-outline-light mr-2" type="submit">MANAGEMENT</button>
-    <button class="btn btn-outline-light mr-2" type="submit">PROFILE</button>
-    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+    <button class="btn btn-outline-light mr-2" type="submit"><a href="index.php">HOME</a></button>
+    <button class="btn btn-outline-light mr-2" type="submit"><a href="management.php">MANAGEMENT</a></button>
+    <button class="btn btn-outline-light mr-2" type="submit"><a href="profile.php">PROFILE</a></button>
+    <a href="profile.php"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
         </svg></a>
 </nav>
