@@ -24,15 +24,37 @@
 <header class="container pt-3 bg-dark">
     <img class="img-fluid" src="./img/banner%20eyes.jpg">
 </header>
-<section class="container pt-3 pb-3 bg-dark"></section>
+<section class="container pt-3 pb-3 bg-dark text-white">PUT YOUR COLUMN HERE</section>
 <footer class="container pb-5 bg-dark">
     <img class="img-fluid" src="./img/banner%20drummer.jpg">
     <h1>GET IT DONE</h1>
-    <div class="d-flex">
-        <svg class="icon icon-facebook2" height="60" width="60"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-facebook2"></use></svg>
-        <svg class="icon icon-twitter" height="60" width="60"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-twitter"></use></svg>
-        <h2 class="pt-4 text-white">CONTACT</h2>
+    <div class="d-flex justify-content-around ml-5 mr-5">
+        <a href="#">
+            <svg class="icon icon-facebook2" height="40" width="40">
+                <use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-facebook2"></use>
+            </svg>
+        </a>
+        <a href="#">
+            <svg class="icon icon-twitter" height="40" width="40">
+                <use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+        </a>
+        <h6>CONTACT</h6>
+        <a href="#">
+            <svg class="icon icon-phone" width="40" height="40">
+                <use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-phone"></use>
+            </svg>
+        </a>
+        <a href="#">
+            <svg class="icon icon-mail4" width="40" height="40">
+                <use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-mail4"></use>
+            </svg>
+        </a>
     </div>
+    <div class="underline"></div>
+    <p>Vangeeststraat 254, 2000 Antwerpen.
+        voor meer info bel het nr 1515 5451 55151, copyright claim fsd-syntra, any illegal activity will be banished from the website.
+        Art-directory wishes every customer a good and productive time.</p>
 </footer>
 <script src="./src/css/base/Icons/svgxuse.js"></script>
 </body>

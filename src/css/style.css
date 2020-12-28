@@ -14,6 +14,39 @@ footer img{
     width: 100%;
 }
 footer h1{
-    color: white;
+    color: gray;
     text-align: center;
+}
+footer div a{
+    fill: gray;
+}
+footer div a:hover{
+    fill: white;
+}
+.bi-person-fill:hover{
+    fill: white;
+}
+footer div h6{
+    color: gray;
+    padding-top: 20px;
+}
+
+/* bij het aanmaken van columns text-align:center; verwijderen!!!!*/
+section{
+    text-align: center;
+}
+.underline{
+    margin: auto;
+    margin-top: 5px;
+    height: 2px;
+    width: 60%;
+    background-color: black;
+}
+footer p{
+    margin-top: 5px;
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
 }
