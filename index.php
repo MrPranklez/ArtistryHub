@@ -24,7 +24,9 @@
 <header class="container pt-3 bg-dark">
     <img class="img-fluid" src="./img/banner%20eyes.jpg">
 </header>
+<!--- vanaf hier column's invoegen --->
 <section class="container pt-3 pb-3 bg-dark text-white">PUT YOUR COLUMN HERE</section>
+<!--- hier start de footer --->
 <footer class="container pb-5 bg-dark">
     <img class="img-fluid" src="./img/banner%20drummer.jpg">
     <h1>GET IT DONE</h1>
