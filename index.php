@@ -12,18 +12,26 @@
 </head>
 <body>
 <nav class="navbar navbar-light bg-danger container d-flex">
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-disc" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-        <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z"/>
-    </svg>
+    <svg class="icon icon-alphabet_96900" fill="white"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-alphabet_96900"></use></svg>
     <a class="navbar-brand text-white flex-grow-1 ml-2">ArtistryHub</a>
     <button class="btn btn-outline-light mr-2" type="submit"><a href="index.php">HOME</a></button>
     <button class="btn btn-outline-light mr-2" type="submit"><a href="management.php">MANAGEMENT</a></button>
     <button class="btn btn-outline-light mr-2" type="submit"><a href="profile.php">PROFILE</a></button>
-    <a href="profile.php"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+    <a href="profile.php"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="darkred" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
         </svg></a>
 </nav>
-<header class="container pt-3 bg-dark"><img class="img-fluid" style="width: 100%" src="./img/banner%20eyes.jpg"></header>
+<header class="container pt-3 bg-dark">
+    <img class="img-fluid" src="./img/banner%20eyes.jpg">
+</header>
+<section class="container pt-3 pb-3 bg-dark"></section>
+<footer class="container pb-5 bg-dark">
+    <img class="img-fluid" src="./img/banner%20drummer.jpg">
+    <div class="d-flex">
+        <svg class="icon icon-facebook2"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-facebook2"></use></svg>
+        <h1>GET IT DONE</h1>
+    </div>
+</footer>
+<script src="./src/css/base/Icons/svgxuse.js"></script>
 </body>
 </html>

@@ -1,9 +1,19 @@
 nav button a{
     text-decoration: none;
     color: white;
-    text-underline: none;
+    padding: 10px;
 }
 nav button a:hover{
     text-decoration: none;
     color: darkred;
+}
+header img{
+    width: 100%;
+}
+footer img{
+    width: 100%;
+}
+footer h1{
+    color: white;
+    text-align: center;
 }
