@@ -1,5 +1,5 @@
 <?php
-require_once 'lib/html_function.php';
+require_once 'lib/html_functions.php';
 //head printen
 PrintHead();
 ?>
