@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/connection_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/connection_data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/html_function.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sanitize.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sanitize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/security.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/security.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management.php" beforeDir="false" afterPath="$PROJECT_DIR$/management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,5 +54,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1053" y="-989" width="1002" height="910" key="dock-window-1" timestamp="1609701665354">
+      <screen x="-324" y="-1440" width="2560" height="1400" />
+    </state>
+    <state x="1053" y="-989" width="1002" height="910" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609701665354" />
+    <state x="371" y="-14" width="811" height="910" maximized="true" key="dock-window-2" timestamp="1609701665354">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="371" y="-14" width="811" height="910" maximized="true" key="dock-window-2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609701665354" />
+    <state x="334" y="-9" width="793" height="910" maximized="true" key="dock-window-3" timestamp="1609702582421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="334" y="-9" width="793" height="910" maximized="true" key="dock-window-3/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609702582421" />
   </component>
 </project>

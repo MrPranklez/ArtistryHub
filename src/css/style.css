@@ -30,10 +30,14 @@ footer div h6{
     color: gray;
     padding-top: 20px;
 }
-
-/* bij het aanmaken van columns text-align:center; verwijderen!!!!*/
-section{
-    text-align: center;
+section nav {
+    background-color: darkred;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    padding-top: 10px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 5px;
 }
 .underline{
     margin: auto;
@@ -49,4 +53,11 @@ footer p{
     text-align: center;
     padding-right: 100px;
     padding-left: 100px;
+}
+.incolumn{
+    min-height: 220px;
+    min-width: 250px;
+}
+.divincol{
+    color: lightgray;
 }
