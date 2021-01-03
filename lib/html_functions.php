@@ -27,3 +27,10 @@ function PrintFooter()
     $head = file_get_contents("templates/footer.html");
     print $head;
 }
+
+// functie om footer.html te printen
+function PrintColumnsindex()
+{
+    $head = file_get_contents("templates/columnsindex.html");
+    print $head;
+}
