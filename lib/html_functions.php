@@ -1,4 +1,3 @@
-
 <?php
 
 // functie om de head te printen van head.html

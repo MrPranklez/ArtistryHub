@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1437a79a-7a21-4679-b73b-96403ad3077f" name="Default Changelist" comment="" />
+    <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/connection_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/connection_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/html_function.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sanitize.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sanitize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/security.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/security.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management.php" beforeDir="false" afterPath="$PROJECT_DIR$/management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,150 +22,45 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1mINreaYru967sZBaTyZAqjO93U" />
+  <component name="ProjectId" id="1mLso5Yx3UIDrVULUKsJqZnAsWf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub\src\css\base\Icons" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1437a79a-7a21-4679-b73b-96403ad3077f" name="Default Changelist" comment="" />
-      <created>1609177344906</created>
+      <changelist id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="" />
+      <created>1609284377046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1609177344906</updated>
-      <workItem from="1609177345971" duration="585000" />
-      <workItem from="1609178123936" duration="11000" />
-      <workItem from="1609178165416" duration="234000" />
-      <workItem from="1609178523439" duration="15279000" />
-      <workItem from="1609199001743" duration="2899000" />
+      <updated>1609284377046</updated>
+      <workItem from="1609284379028" duration="1151000" />
     </task>
-    <task id="LOCAL-00001" summary="images committed">
-      <created>1609177837730</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609177837730</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Navbar complete">
-      <created>1609181038576</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1609181038576</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Image header set">
-      <created>1609183466004</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1609183466004</updated>
-    </task>
-    <task id="LOCAL-00004" summary="links added to buttons + css styled">
-      <created>1609185581646</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1609185581646</updated>
-    </task>
-    <task id="LOCAL-00005" summary="svg icons added">
-      <created>1609188609167</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1609188609167</updated>
-    </task>
-    <task id="LOCAL-00006" summary="svg icons added">
-      <created>1609194082277</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1609194082277</updated>
-    </task>
-    <task id="LOCAL-00007" summary="footer ready">
-      <created>1609198169941</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1609198169941</updated>
-    </task>
-    <task id="LOCAL-00008" summary="footer ready">
-      <created>1609198325131</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1609198325131</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Printfunctions templates ready">
-      <created>1609201421111</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1609201421111</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="images committed" />
-    <MESSAGE value="Navbar complete" />
-    <MESSAGE value="Image header set" />
-    <MESSAGE value="links added to buttons + css styled" />
-    <MESSAGE value="svg icons added" />
-    <MESSAGE value="footer ready" />
-    <MESSAGE value="Printfunctions templates ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Printfunctions templates ready" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="388" y="-1199" width="796" height="1024" key="CommitChangelistDialog2" timestamp="1609201420558">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
-    </state>
-    <state x="388" y="-1199" width="796" height="1024" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609201420558" />
-    <state x="735" y="-951" key="FileChooserDialogImpl" timestamp="1609198648385">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
-    </state>
-    <state x="735" y="-951" key="FileChooserDialogImpl/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609198648385" />
-    <state x="548" y="-1007" key="Vcs.Push.Dialog.v2" timestamp="1609201453706">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
-    </state>
-    <state x="548" y="-1007" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609201453706" />
-    <state x="43" y="-17" width="1521" height="1386" maximized="true" key="dock-window-1" timestamp="1609184663588">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="43" y="-17" width="1521" height="1386" maximized="true" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609184663588" />
-    <state x="276" y="0" width="1241" height="910" key="dock-window-2" timestamp="1609185801501">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="276" y="0" width="1241" height="910" key="dock-window-2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609185801501" />
-    <state x="264" y="0" width="1064" height="910" key="dock-window-3" timestamp="1609199060042">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="264" y="0" width="1064" height="910" key="dock-window-3/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609199060042" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
