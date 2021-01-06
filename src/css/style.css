@@ -61,3 +61,6 @@ footer p{
 .divincol{
     color: lightgray;
 }
+.title{
+    text-transform: uppercase;
+}

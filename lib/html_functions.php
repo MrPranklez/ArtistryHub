@@ -28,9 +28,22 @@ function PrintFooter()
     print $head;
 }
 
-// functie om footer.html te printen
-function PrintColumnsindex()
+function MergeViewWithData( $template, $data )
 {
-    $head = file_get_contents("templates/columnsindex.html");
-    print $head;
+    $returnvalue = "";
+
+    foreach ( $data as $row )
+    {
+        $output = $template;
+
+        foreach( array_keys($row) as $field )  //eerst "img_id", dan "img_title", ...
+        {
+            $output = str_replace( "@$field@", $row["$field"], $output );
+        }
+
+        $returnvalue .= $output;
+    }
+
+    return $returnvalue;
 }
+
