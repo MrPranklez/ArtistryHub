@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/columnsindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/columnsindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/form_elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/form_elements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +41,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpprogrammeren" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -50,7 +59,9 @@
       <updated>1609284377046</updated>
       <workItem from="1609284379028" duration="1151000" />
       <workItem from="1609942406094" duration="55000" />
-      <workItem from="1609946910410" duration="6279000" />
+      <workItem from="1609946910410" duration="6465000" />
+      <workItem from="1611011087333" duration="12000" />
+      <workItem from="1611011157143" duration="13422000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -66,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609703791345</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="html_functions.php ready for index.php">
+      <created>1609955924310</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609955924310</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,18 +108,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="html_functions.php ready for index.php" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1609703790758">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1609955923775">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609703790758" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609955923775" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
     <state x="736" y="-985" key="FileChooserDialogImpl/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609942457232" />
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1609704458140">
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1609955959032">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609704458140" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609955959032" />
+    <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611011168032">
+      <screen x="-324" y="-1440" width="2560" height="1400" />
+    </state>
+    <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611011168032" />
     <state x="1053" y="-989" width="1002" height="910" key="dock-window-1" timestamp="1609701665354">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>

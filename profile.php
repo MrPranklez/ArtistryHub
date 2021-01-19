@@ -1,5 +1,5 @@
 <?php
-require_once 'lib/html_functions.php';
+require_once 'lib/autoload.php';
 //head printen
 PrintHead();
 ?>
@@ -16,7 +16,13 @@ PrintNav();
 
 
 <!--- vanaf hier column's invoegen --->
-<section class="container pt-3 pb-3 bg-dark text-white">PUT YOUR COLUMN HERE</section>
+<section class="container pt-3 pb-3 bg-dark text-white">The login page/met eventueel registeren
+
+
+
+
+
+</section>
 <!--- hier start de footer --->
 
 
@@ -26,7 +32,7 @@ PrintNav();
 
 <?php
 //print footer
-PrintFooter();
+
 ?>
 <script src="./src/css/base/Icons/svgxuse.js"></script>
 </body>

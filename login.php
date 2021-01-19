@@ -8,14 +8,21 @@ PrintHead();
 <?php
 //print navbar
 PrintNav();
-//print header
-PrintHeader();
+
+// hier komt de band zijn profilebanner
+
 ?>
 
 
 
 <!--- vanaf hier column's invoegen --->
-<section class="container pt-3 pb-3 bg-dark text-white">PUT YOUR COLUMN HERE</section>
+<section class="container pt-3 pb-3 bg-dark text-white">The login page/met eventueel registeren
+
+
+
+
+
+</section>
 <!--- hier start de footer --->
 
 
@@ -25,7 +32,7 @@ PrintHeader();
 
 <?php
 //print footer
-PrintFooter();
+
 ?>
 <script src="./src/css/base/Icons/svgxuse.js"></script>
 </body>
