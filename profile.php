@@ -12,33 +12,18 @@ PrintNav();
 // hier komt de band zijn profilebanner
 
 ?>
-<header class="header container pt-3 bg-dark">
-    <div class="banner">
-        <img class="img-fluid" src="./img/banner%20muse.jpg">
-    </div>
-    <div class="d-flex mt-2">
-        <div class="profilepic col-4 p-1 bg-danger">
-            <img class="img-fluid" src="./img/muse%20profile%20pic.jpg">
-        </div>
-        <div class="artistname align-self-end text-white ml-2 mt-4">
-            <h1 class="mb-0 pb-0">MUSE</h1>
-        </div>
-    </div>
-</header>
+<?php
+//get data
+$data = GetData( "select * from accounts where acc_id = 2" ); //// voorlopige id
 
+//get template
+$template = file_get_contents("templates/header_profile.html");
 
+//merge
+$output = MergeViewWithData( $template, $data );
+print $output;
+?>
 
-<!--- vanaf hier column's invoegen --->
-<section class="container pt-3 pb-3 bg-dark text-white">
-
-    <nav class="unlinkednavbar">
-        <h6 class="text-white pb-0" href="#">BIOGRAPHY</h6>
-    </nav>
-    <div class='col-sm-12  mt-0 pt-1 pb-1'>
-        <P>De biografie van Muse, ze worden benoemd als de beste liveband van deze tijd,
-        samen met enkel een band van 3 leden spelen ze maandelijks voetbalstadions vol.
-        Alles is altijd snel uitverkocht dus aarzel niet!</P>
-    </div>
     <nav class="unlinkednavbar">
         <h6 class="text-white pb-0" href="#">PROJECTS</h6>
     </nav>
@@ -52,16 +37,21 @@ PrintNav();
         </thead>
         <tbody>
         <!--- appart omgegevens te kunnen herhalen via databank --->
-        <tr>
-            <td>SIMULATION THEORY</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <td>DRONES</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
+
+
+        <?php
+        //get data
+        $data = GetData( "select * from projects where proj_acc_id = 2" ); /// voooorlopige id
+
+        //get template
+        $template = file_get_contents("templates/tbodyprojects_profile.html");
+
+        //merge
+        $output = MergeViewWithData( $template, $data );
+        print $output;
+        ?>
+
+
         <!--- appart omgegevens te kunnen herhalen via databank --->
         </tbody>
     </table>
@@ -81,18 +71,17 @@ PrintNav();
         </thead>
         <tbody>
         <!--- appart omgegevens te kunnen herhalen via databank --->
-        <tr>
-            <th scope="row">-</th>
-            <td>SIMULATION THEORY</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">-</th>
-            <td>DRONES</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
+        <?php
+        //get data
+        $data = GetData( "select * from events where ev_acc_id = 2" ); /// voorlopig id 2
+
+        //get template
+        $template = file_get_contents("templates/tbodyevents_profile.html");
+
+        //merge
+        $output = MergeViewWithData( $template, $data );
+        print $output;
+        ?>
         <!--- appart omgegevens te kunnen herhalen via databank --->
         </tbody>
     </table>
