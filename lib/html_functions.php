@@ -13,6 +13,16 @@ function PrintNav()
     $head = file_get_contents("templates/navbar.html");
     print $head;
 }
+function Printnavbarproject()
+{
+    $head = file_get_contents("templates/navbarproject_profile.html");
+    print $head;
+}
+function Printnavbarevents()
+{
+    $head = file_get_contents("templates/navbarevents_profile.html");
+    print $head;
+}
 
 // functie om header.html te printen
 function PrintHeader()
