@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/navbarartists_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbarmusic_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
     </list>
@@ -90,7 +86,7 @@
       <workItem from="1611154945689" duration="7039000" />
       <workItem from="1611167423302" duration="5559000" />
       <workItem from="1611180968563" duration="8824000" />
-      <workItem from="1611190400423" duration="2585000" />
+      <workItem from="1611190400423" duration="3253000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -148,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611189781305</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rdy to start with forms">
+      <created>1611193216877</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611193216877</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,13 +176,14 @@
     <MESSAGE value="profilestyling rdy" />
     <MESSAGE value="profile connection database ok" />
     <MESSAGE value="indexlinks linked with profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="indexlinks linked with profile page" />
+    <MESSAGE value="rdy to start with forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="rdy to start with forms" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611189780704">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611193216304">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611189780704" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611193216304" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>

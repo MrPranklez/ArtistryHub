@@ -18,7 +18,7 @@ PrintNav();
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //                                  AANPASSEN IN DE TOEKOMST
-//                          OP JE PROFIEL GERAKEN MET JE LOGIN ID
+//                          OOK OP JE PROFIEL GERAKEN MET JE LOGIN ID
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
 
