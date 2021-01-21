@@ -37,6 +37,17 @@ function PrintFooter()
     $head = file_get_contents("templates/footer.html");
     print $head;
 }
+function PrintNavbarMusic()
+{
+    $head = file_get_contents("templates/navbarmusic_index.html");
+    print $head;
+}
+function PrintNavbarArtists()
+{
+    $head = file_get_contents("templates/navbarartists_index.html");
+    print $head;
+}
+
 
 function MergeViewWithData( $template, $data )
 {

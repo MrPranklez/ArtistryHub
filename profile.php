@@ -22,63 +22,37 @@ PrintNav();
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
 
-$data = GetData( "select * from accounts where acc_id =" . $_GET['acc_id'] );
+    //get data
+    $dataAccounts = GetData( "select * from accounts where acc_id =" . $_GET['acc_id'] );
+    $dataProjects = GetData( "select * from projects where proj_acc_id =" . $_GET['acc_id'] );
+    $dataEvents = GetData( "select * from events where ev_acc_id = ". $_GET['acc_id'] );
 
-//get template
-$template = file_get_contents("templates/header_profile.html");
+    //get template
+    $templateAccounts = file_get_contents("templates/header_profile.html");
+    $templateProjects = file_get_contents("templates/tbodyprojects_profile.html");
+    $templateEvents = file_get_contents("templates/tbodyevents_profile.html");
 
-//merge
-$output = MergeViewWithData( $template, $data );
-print $output;
-?>
-
-        <!--- appart omgegevens te kunnen herhalen via databank --->
-
-
-        <?php
-        Printnavbarproject();
-        //get data
-
-        $data = GetData( "select * from projects where proj_acc_id =" . $_GET['acc_id'] ); /// voooorlopige id
-
-        //get template
-        $template = file_get_contents("templates/tbodyprojects_profile.html");
-
-        //merge
-        $output = MergeViewWithData( $template, $data );
-        print $output;
-        ?>
+    //merge
+    $outputAccounts = MergeViewWithData( $templateAccounts, $dataAccounts );
+    $outputProjects = MergeViewWithData( $templateProjects, $dataProjects );
+    $outputEvents = MergeViewWithData( $templateEvents, $dataEvents );
 
 
-        <!--- appart omgegevens te kunnen herhalen via databank --->
-        </tbody>
+    print $outputAccounts;
+    Printnavbarproject();
+    print $outputProjects;
+    ?>
+
+        </tbody> <!-- kan niet mee in template gestoken worden door herhaling van templates -->
     </table>
 
-
-        <!--- appart omgegevens te kunnen herhalen via databank --->
-        <?php
-        Printnavbarevents();
-        //get data
-        $data = GetData( "select * from events where ev_acc_id = ". $_GET['acc_id'] ); /// voorlopig id 2
-
-        //get template
-        $template = file_get_contents("templates/tbodyevents_profile.html");
-
-        //merge
-        $output = MergeViewWithData( $template, $data );
-        print $output;
-        ?>
-        <!--- appart omgegevens te kunnen herhalen via databank --->
+    <?php
+    Printnavbarevents();
+    print $outputEvents;
+    ?>
         </tbody>
     </table>
-
-
 </section>
-<!--- hier start de footer --->
-
-
-
-
 
 
 <?php

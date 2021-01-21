@@ -12,53 +12,29 @@ PrintNav();
 PrintHeader();
 ?>
 
-<section class="container pt-3 pb-3 bg-dark text-white">
-    <nav class="unlinkednavbar">
-        <h6 class="text-white pb-0" href="#">MUSICIAN PROFILES</h6>
-    </nav>
-    <div class="container mb-3">
-        <div class="row">
 
 
             <?php
-            // columns van Musicians
+
             //get data
-            $data = GetData( "select * from accounts where acc_art_typ_id = 1" );
+            $dataMusic = GetData( "select * from accounts where acc_art_typ_id = 1" );
+            $dataArt = GetData( "select * from accounts where acc_art_typ_id = 2" );
 
             //get template
-            $template = file_get_contents("templates/columnsindex.html");
+            $templateMusic = file_get_contents("templates/columnsindex.html");
+            $templateArt = file_get_contents("templates/columnsindex.html");
 
             //merge
-            $output = MergeViewWithData( $template, $data );
-            print $output;
+            $outputMusic = MergeViewWithData( $templateMusic, $dataMusic );
+            $outputArt = MergeViewWithData( $templateArt, $dataArt );
+
+            PrintNavbarMusic();
+            print $outputMusic;
+            PrintNavbarArtists();
+            print $outputArt;
             ?>
 
-
-
-        </div>
-    </div>
-    <nav class="unlinkednavbar">
-        <h6 class="text-white pb-0" href="#">ARTISTS PROFILES</h6>
-    </nav>
-    <div class="container">
-        <div class="row">
-
-
-            <?php
-            //get data
-            $data = GetData( "select * from accounts where acc_art_typ_id = 2" );
-
-            //get template
-            $template = file_get_contents("templates/columnsindex.html");
-
-            //merge
-            $output = MergeViewWithData( $template, $data );
-            print $output;
-            ?>
-
-
-
-        </div>
+        </div>  <!-- kan niet mee in template gestoken worden door herhaling van templates -->
     </div>
 </section>
 
