@@ -32,6 +32,7 @@ function SaveFormData()
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
         CompareWithDatabase( $table, $pkey );
 
+        //terugkeren naar afzender als er een fout is
         if ( count($_SESSION['errors']) > 0 ) { header( "Location: " . $sending_form_uri ); exit(); }
 
         //insert or update?
@@ -46,8 +47,12 @@ function SaveFormData()
 
         foreach ( $_POST as $field => $value )
         {
+
             //skip non-data fields
             if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
+
+
+
 
             //handle primary key field
             if ( $field == $pkey )
@@ -70,6 +75,7 @@ function SaveFormData()
 
         //run SQL
         $result = ExecuteSQL( $sql );
+
 
         //output if not redirected
         print $sql ;

@@ -21,14 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/artist profile pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/artistprofilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner crowdsurf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bannercrowdsurf.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner drummer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bannerdrummer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner eyes.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bannereyes.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner muse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bannermuse.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/dali profile pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/daliprofilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/greta van fleet profile pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/gretavanfleetprofilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/guitar profile pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/guitarprofilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/muse profile pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/museprofilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/van gogh profile pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/vangoghprofilepic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/security.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/security.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/columnsindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/columnsindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/form_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +100,7 @@
       <workItem from="1611180968563" duration="8824000" />
       <workItem from="1611190400423" duration="3444000" />
       <workItem from="1611353359068" duration="18961000" />
-      <workItem from="1611409233276" duration="9364000" />
+      <workItem from="1611409233276" duration="18643000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -173,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611371244544</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="csrf works, finetuning forms">
+      <created>1611422667745</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611422667745</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,13 +213,14 @@
     <MESSAGE value="indexlinks linked with profile page" />
     <MESSAGE value="rdy to start with forms" />
     <MESSAGE value="forms csrf set but not yet working" />
-    <option name="LAST_COMMIT_MESSAGE" value="forms csrf set but not yet working" />
+    <MESSAGE value="csrf works, finetuning forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="csrf works, finetuning forms" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="766" y="0" key="CommitChangelistDialog2" timestamp="1611371243771">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1186" y="-1222" key="CommitChangelistDialog2" timestamp="1611422666988">
+      <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611193688151" />
+    <state x="1186" y="-1222" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611422666988" />
     <state x="766" y="0" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611371243771" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
@@ -216,14 +230,18 @@
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
     <state x="1297" y="-994" key="IDE.errors.dialog/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611167981251" />
+    <state x="1346" y="-1034" key="RollbackChangesDialog" timestamp="1611440747077">
+      <screen x="-324" y="-1440" width="2560" height="1400" />
+    </state>
+    <state x="1346" y="-1034" key="RollbackChangesDialog/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611440747077" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1611367030327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611367030327" />
-    <state x="722" y="257" key="Vcs.Push.Dialog.v2" timestamp="1611371259705">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611422677122">
+      <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611193710813" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611422677122" />
     <state x="722" y="257" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611371259705" />
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611011168032">
       <screen x="-324" y="-1440" width="2560" height="1400" />

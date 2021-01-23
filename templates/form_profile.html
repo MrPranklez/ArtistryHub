@@ -17,7 +17,11 @@
         <p><small>@csrf_token@</small></p>
         <!--end security-->
 
-
+        <div class="form-group mb-2">
+            <label class="mb-0 text-white" for="acc_id">BAND ID</label>
+            <input type="text" class="form-control bg-dark text-white" id="acc_id" name="acc_id" value="@acc_id@">
+            @acc_id_error@
+        </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="acc_name">BAND NAME</label>
             <input type="text" class="form-control bg-dark text-white" id="acc_name" name="acc_name" value="@acc_name@">
@@ -34,11 +38,11 @@
             @acc_bio_error@
         </div>
         <div class="form-group mb-2">
-            <label class="mb-0 text-white" for="acc_art_typ_id">ARTIST TYPE</label>
-            <div class="col-sm-1 pl-0 bg-secondary">
-                @select_art_type@
-                @acc_art_typ_id_error@
-            </div>
+            <label class="mb-0 text-white" for="acc_prof_pic">PROFILE PIC</label>
+            <input class="col-sm-8 pl-0 bg-secondary">
+                @select_pic@
+                @acc_prof_pic_error@
+            </input>
         </div>
         <button type="submit" class="btn btn-dark mt-2">Save</button>
     </form>
