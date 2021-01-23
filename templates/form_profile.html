@@ -38,12 +38,11 @@
             @acc_bio_error@
         </div>
         <div class="form-group mb-2">
-            <label class="mb-0 text-white" for="acc_prof_pic">PROFILE PIC</label>
-            <input class="col-sm-8 pl-0 bg-secondary">
-                @select_pic@
-                @acc_prof_pic_error@
-            </input>
+            <label class="mb-0 text-white" for="acc_prof_pic">BAND ID</label>
+            <input type="text" class="form-control bg-dark text-white" id="acc_prof_pic" name="acc_prof_pic" value="@acc_prof_pic@">
+            @acc_prof_pic_error@
         </div>
+
         <button type="submit" class="btn btn-dark mt-2">Save</button>
     </form>
 </div>

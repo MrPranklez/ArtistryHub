@@ -41,9 +41,6 @@ PrintHeader();
     $row = $rows_accounts[0];
 
     $extra_elements['csrf_token'] = GenerateCSRF("profile_management.php" );
-    $extra_elements['select_pic'] = MakeSelect( $fkey = 'acc_id',
-        $value = $row['acc_id'] ,
-        $sql = "select acc_id, acc_prof_pic from accounts where acc_id=". $_GET['acc_id'] );
 
     //get template
     $template_accounts = file_get_contents("templates/form_profile.html");
