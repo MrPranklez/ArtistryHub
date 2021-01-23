@@ -1,5 +1,5 @@
 <nav class="unlinkednavbar">
-    <h6 class="text-white pb-0" href="#">MANAGE EVENTS</h6>
+    <h6 class="text-white pb-0" href="#">ADD EVENTS</h6>
 </nav>
 <div class='col-sm-12 bg-secondary mt-0 pt-1 pb-1'>
     <form id="mainform" name="mainform" method="POST" action="lib/save.php">
@@ -8,29 +8,39 @@
         <input type="hidden" id="table" name="table" value="events">
         <input type="hidden" id="pkey" name="pkey" value="ev_id">
         <input type="hidden" id="afterinsert" name="afterinsert" value="profile.php">
-        <input type="hidden" id="afterupdate" name="afterupdate" value="profile.php">
+        <input type="hidden" id="afterupdate" name="afterupdate" value="">
         <!-- end meta info -->
+
+        <!--security-->
+        <input type="hidden" name="csrf" value="@csrf_token@">
+        <p><small>@csrf_token@</small></p>
+        <!--end security-->
 
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="ev_loc">LOCATION</label>
             <input type="text" class="form-control bg-dark text-white" id="ev_loc" name="ev_loc" value="@ev_loc@">
+            @ev_loc_error@
         </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="ev_link">LINK</label>
             <input type="text" class="form-control bg-dark text-white" id="ev_link" name="ev_link" value="@ev_link@">
+            @ev_link_error@
         </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="ev_start_time">EVENT START</label>
             <input type="datetime-local" class="col-6 form-control bg-dark text-white" id="ev_start_time" name="ev_start_time" value="@ev_start_time@">
+            @ev_start_time_error@
         </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="ev_end_time">EVENT END</label>
             <input type="datetime-local" class="col-6 form-control bg-dark text-white" id="ev_end_time" name="ev_end_time" value="@ev_end_time@">
+            @ev_end_time_error@
         </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="ev_price">PRICE</label>
             <input type="number" class="form-control bg-dark text-white col-2" id="ev_price" name="ev_price" value="@ev_price@">
+            @ev_price_error@
         </div>
-        <button type="submit" class="btn btn-dark mt-2">Save</button>
+        <button type="submit" class="btn btn-dark mt-2">Add to events</button>
     </form>
 </div>

@@ -1,5 +1,5 @@
 <nav class="unlinkednavbar">
-    <h6 class="text-white pb-0" href="#">MANAGE PROJECTS</h6>
+    <h6 class="text-white pb-0" href="#">ADD PROJECT</h6>
 </nav>
 <div class='col-sm-12 bg-secondary mt-0 pt-1 pb-1 mb-4'>
     <form id="mainform" name="mainform" method="POST" action="lib/save.php">
@@ -8,21 +8,31 @@
         <input type="hidden" id="table" name="table" value="projects">
         <input type="hidden" id="pkey" name="pkey" value="proj_id">
         <input type="hidden" id="afterinsert" name="afterinsert" value="profile.php">
-        <input type="hidden" id="afterupdate" name="afterupdate" value="profile.php">
+        <input type="hidden" id="afterupdate" name="afterupdate" value="">
         <!-- end meta info -->
+
+        <!--security-->
+        <input type="hidden" name="csrf" value="@csrf_token@">
+        <p><small>@csrf_token@</small></p>
+        <!--end security-->
 
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="proj_name">PROJECT NAME</label>
             <input type="text" class="form-control bg-dark text-white" id="proj_name" name="proj_name" value="@proj_name@">
+            @proj_name_error@
         </div>
+
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="proj_desc">DESCRIPTION</label>
-            <textarea class="form-control bg-dark text-white" id="proj_desc" name="proj_desc" placeholder="enter bio"></textarea>
+            <input type="text" class="form-control bg-dark text-white" id="proj_desc" name="proj_desc" value="@proj_desc@">
+            @proj_desc_error@
         </div>
+
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="proj_date">RELEASE DATE</label>
             <input type="date" class="col-5 form-control bg-dark text-white" id="proj_date" name="proj_date" value="@proj_date@">
+            @proj_date_error@
         </div>
-        <button type="submit" class="btn btn-dark mt-2">Save</button>
+        <button type="submit" class="btn btn-dark mt-2">Add to profile</button>
     </form>
 </div>
