@@ -24,15 +24,20 @@
             @acc_name_error@
         </div>
         <div class="form-group mb-2">
+            <label class="mb-0 text-white" for="acc_desc">BAND DESCRIPTION</label>
+            <input type="text" class="form-control bg-dark text-white" id="acc_desc" name="acc_desc" value="@acc_desc@">
+            @acc_desc_error@
+        </div>
+        <div class="form-group mb-2">
             <label class="mb-0 text-white" for="acc_bio">BIOGRAPHY</label>
             <textarea class="form-control bg-dark text-white" id="acc_bio" name="acc_bio">@acc_bio@</textarea>
             @acc_bio_error@
         </div>
         <div class="form-group mb-2">
-            <label class="mb-0 text-white" for="acc_prof_pic">PROFILE PICTURE</label>
-            <div class="col-sm-2 pl-0 bg-dark">
-                @select_pic@
-                @acc_prof_pic_error@
+            <label class="mb-0 text-white" for="acc_art_typ_id">ARTIST TYPE</label>
+            <div class="col-sm-1 pl-0 bg-secondary">
+                @select_art_type@
+                @acc_art_typ_id_error@
             </div>
         </div>
         <button type="submit" class="btn btn-dark mt-2">Save</button>
