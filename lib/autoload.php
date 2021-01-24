@@ -17,6 +17,14 @@ if ( key_exists( 'errors', $_SESSION ) AND is_array( $_SESSION['errors']) )
     $errors = $_SESSION['errors'];
 }
 
+//alert messages
+$msgs = [];
+
+if ( key_exists( 'msgs', $_SESSION ) AND is_array( $_SESSION['msgs']) )
+{
+    $msgs = $_SESSION['msgs'];
+}
+
 //initialize $old_post
 $old_post = [];
 
@@ -25,5 +33,6 @@ if ( key_exists( 'OLD_POST', $_SESSION ) AND is_array( $_SESSION['OLD_POST']) )
     $old_post = $_SESSION['OLD_POST'];
 }
 
+$_SESSION['msgs'] = [];
 $_SESSION['errors'] = [];
 $_SESSION['OLD_POST'] = [];

@@ -1,5 +1,7 @@
 <?php
 require_once 'lib/autoload.php';
+error_reporting( E_ALL );
+ini_set( 'display_errors', 1 );
 //head printen
 PrintHead();
 
@@ -17,7 +19,7 @@ PrintNav();
 //                                  AANPASSEN IN DE TOEKOMST
 //                          OOK OP JE PROFIEL GERAKEN MET JE LOGIN ID
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
+if ( ! is_numeric( $_GET['acc_id'])) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
 
     //get data
     $dataAccounts = GetData( "select * from accounts where acc_id =" . $_GET['acc_id'] );

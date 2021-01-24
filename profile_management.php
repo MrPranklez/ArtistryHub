@@ -31,7 +31,7 @@ PrintHeader();
     /// push the right data to the database
     //$rows_events = [ 0 => [ "ev_loc" => "", "ev_link" => "", "ev_start_time" => "", "ev_end_time" => "", "ev_price" => "" ]];
 
-    $row = $rows_accounts[0];
+    //$row = $rows_accounts[0];
 
     $extra_elements['csrf_token'] = GenerateCSRF("profile_management.php" );
     //$extra_elements['select_pic'] = MakeSelect( $fkey = 'acc_id',

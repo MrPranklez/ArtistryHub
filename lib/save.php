@@ -33,7 +33,11 @@ function SaveFormData()
         CompareWithDatabase( $table, $pkey );
 
         //terugkeren naar afzender als er een fout is
-        if ( count($_SESSION['errors']) > 0 ) { header( "Location: " . $sending_form_uri ); exit(); }
+        if ( count($_SESSION['errors']) > 0 )
+        {
+            $_SESSION['OLD_POST'] = $_POST;
+            header( "Location: " . $sending_form_uri ); exit();
+        }
 
         //insert or update?
         if ( $_POST["$pkey"] > 0 ) $update = true;
@@ -75,6 +79,10 @@ function SaveFormData()
 
         //run SQL
         $result = ExecuteSQL( $sql );
+
+        if ($result AND $table == "projects"){
+            $_SESSION['msgs'][] = "Congrats! Project succesfully added!";
+        }
 
 
         //output if not redirected

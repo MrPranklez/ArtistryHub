@@ -29,6 +29,13 @@ PrintHeader();
             $outputMusic = MergeViewWithData( $templateMusic, $dataMusic );
             $outputArt = MergeViewWithData( $templateArt, $dataArt );
 
+
+            // place messages if succesfully added or registered
+            foreach ( $msgs as $msg){
+            print '<div class="container bg-dark pt-4 pb-1 mb-0">
+                        <div class="msgs alert alert-success" role="alert">' . $msg . '</div>
+                   </div>';}
+
             PrintNavbarMusic();
             print $outputMusic;
             PrintNavbarArtists();

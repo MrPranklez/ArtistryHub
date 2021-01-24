@@ -21,17 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/security.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/security.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/form_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/form_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,9 +74,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub" />
       <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\artistryhub" />
       <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub\templates" />
-      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -225,10 +222,10 @@
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611011168032" />
-    <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1" timestamp="1611157805423">
+    <state x="-331" y="-1440" width="975" height="1407" key="dock-window-1" timestamp="1611529533576">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611157805423" />
+    <state x="-331" y="-1440" width="975" height="1407" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611529533576" />
     <state x="371" y="-14" width="811" height="910" maximized="true" key="dock-window-2" timestamp="1609701665354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
