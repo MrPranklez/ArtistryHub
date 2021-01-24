@@ -3,6 +3,7 @@
     <form id="login" name="login" method="POST" action="lib/login_check.php">
 
         <input type="hidden" name="csrf" value="@csrf_token@">
+        <input type="hidden" id="afterinsert" name="afterinsert" value="profile.php">
 
         <div class="form-group row">
             <label class="mb-0 text-white" for="acc_email">E-mail</label>

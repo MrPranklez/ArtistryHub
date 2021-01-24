@@ -13,6 +13,12 @@ PrintNav();
 
 <!--- Login Form --->
 <div class="container pt-3 pb-3 bg-dark text-white">
+    <?php
+    foreach ( $msgs as $msg){
+        print '<div class="container bg-dark pt-4 pb-1 mb-0">
+            <div class="msgs alert alert-success" role="alert">' . $msg . '</div>
+            </div>';}
+    ?>
 <div class='d-flex bg-secondary mt-0 pt-1 pb-1'>
 
     <?php
@@ -28,6 +34,8 @@ PrintNav();
         //merge
         $output = MergeViewWithData( $output, $data );
         $output = MergeViewWithExtraElements( $output, $extra_elements );
+
+
 
         print $output;
         ?>

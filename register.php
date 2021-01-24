@@ -19,7 +19,7 @@ PrintNav();
             $data = [ 0 => [
                 "acc_email" => $old_post['acc_email'],
                 "acc_name" => $old_post['acc_name'],
-                "acc_password" => $old_post['acc_password'],
+                "acc_pass" => $old_post['acc_pass'],
                 "acc_art_typ_id" => $old_post['acc_art_typ_id'],
                 "acc_bio" => $old_post['acc_bio'],
                 "acc_desc" => $old_post['acc_desc'],
@@ -27,7 +27,7 @@ PrintNav();
             ]
             ];
         }
-        else $data = [ 0 => [ "acc_email" => "", "acc_name" => "", "acc_password" => "", "acc_art_typ_id" => "", "acc_bio" => "", "acc_desc" => "", "acc_prof_pic" => ""]];
+        else $data = [ 0 => [ "acc_email" => "", "acc_name" => "", "acc_pass" => "", "acc_art_typ_id" => "", "acc_bio" => "", "acc_desc" => "", "acc_prof_pic" => ""]];
 
         //get template
         $output = file_get_contents("templates/register.html");

@@ -3,13 +3,18 @@ error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 require_once "autoload.php";
 
-if ( LoginCheck() )
+$user = LoginCheck();
+
+if ( $user )
 {
-    print "Successfully logged in!";
+    $_SESSION['user'] = $user;
+    $_SESSION['msgs'][] = "Welcome, " . $_SESSION['user']['acc_name'];
+    header("Location: ../index.php");
 }
 else
 {
-    print "Too bad, something went wrong!";
+    unset( $_SESSION['user'] );
+    GoToNoAccess();
 }
 
 function LoginCheck()

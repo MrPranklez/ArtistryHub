@@ -32,6 +32,12 @@ function SaveFormData()
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
         CompareWithDatabase( $table, $pkey );
 
+        if ( count($_SESSION['errors']) > 0 )
+        {
+            $_SESSION['OLD_POST'] = $_POST;
+            header( "Location: " . $sending_form_uri ); exit();
+        }
+
         if ( $table == "accounts" ) {
             ValidateUsrPassword($_POST['acc_pass']);
             CheckUniqueUsrEmail($_POST['acc_email']);
@@ -67,14 +73,11 @@ function SaveFormData()
             {
                 $value = password_hash( $value, PASSWORD_BCRYPT );
                 $keys_values[] = " $field = '$value' " ;
-
-                $_SESSION['msgs'][] = "Thank you for registering!";
             }
             else //all other data-fields
             {
                 $keys_values[] = " $field = '$value' " ;
             }
-
         }
 
         $str_keys_values = implode(" , ", $keys_values );
@@ -88,6 +91,12 @@ function SaveFormData()
         //run SQL
         $result = ExecuteSQL( $sql );
 
+        if ($result AND $table == "accounts"){
+            $_SESSION['msgs'][] = "Congrats! You have successfully registered!";
+        }
+        if ($result AND $table == "projects"){
+            $_SESSION['msgs'][] = "Congrats! Project successfully added!";
+        }
 
         //output if not redirected
         print $sql ;
