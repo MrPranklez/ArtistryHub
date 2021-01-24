@@ -1,5 +1,11 @@
-<nav class="unlinkednavbar">
+<nav class="unlinkednavbar d-flex">
     <h6 class="text-white pb-0">MANAGE PROFILE</h6>
+    <a class="ml-3" href="projects_management.php">
+        <button>Add Projects</button>
+    </a>
+    <a class="ml-3" href="projects_management.php">
+        <button>Add Events</button>
+    </a>
 </nav>
 <div class='col-sm-12 bg-secondary mt-0 pt-1 pb-1 mb-4'>
 
@@ -16,6 +22,11 @@
         <input type="hidden" name="csrf" value="@csrf_token@">
         <!--end security-->
 
+        <div style="display: none" class="form-group mb-2">
+            <label class="mb-0 text-white" for="acc_id">BAND ID</label>
+            <input type="text" class="form-control bg-dark text-white" id="acc_id" name="acc_id" value="@acc_id@">
+            @acc_id_error@
+        </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="acc_name">BAND NAME</label>
             <input type="text" class="form-control bg-dark text-white" id="acc_name" name="acc_name" value="@acc_name@">
@@ -32,7 +43,7 @@
             @acc_bio_error@
         </div>
         <div class="form-group mb-2">
-            <label class="mb-0 text-white" for="acc_prof_pic">PROFILE PIC</label>
+            <label class="mb-0 text-white" for="acc_prof_pic">PROFILE PICUTRE</label>
             <input type="text" class="form-control bg-dark text-white" id="acc_prof_pic" name="acc_prof_pic" value="@acc_prof_pic@">
             @acc_prof_pic_error@
         </div>
