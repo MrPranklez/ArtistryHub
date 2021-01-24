@@ -2,10 +2,7 @@
 require_once 'lib/autoload.php';
 //head printen
 PrintHead();
-?>
 
-<body>
-<?php
 //print navbar
 PrintNav();
 
@@ -60,6 +57,3 @@ if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id']
 PrintFooter();
 
 ?>
-<script src="./src/css/base/Icons/svgxuse.js"></script>
-</body>
-</html>

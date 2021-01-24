@@ -1,18 +1,14 @@
 <?php
 require_once 'lib/autoload.php';
-//head printen
-PrintHead();
-?>
 
-<body>
-<?php
+//print head
+PrintHead();
 //print navbar
 PrintNav();
 //print header
 PrintHeader();
+
 ?>
-
-
 
 <!--- vanaf hier column's invoegen --->
 <section class="container pt-3 pb-3 bg-dark text-white"><h2 class="ml-3">PROFILE MANAGEMENT</h2>
@@ -59,8 +55,5 @@ PrintHeader();
 //print footer
 PrintFooter();
 ?>
-<script src="./src/css/base/Icons/svgxuse.js"></script>
-</body>
-</html>
 
 

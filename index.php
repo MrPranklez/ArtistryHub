@@ -2,10 +2,7 @@
 require_once 'lib/autoload.php';
 //head printen
 PrintHead();
-?>
 
-<body>
-<?php
 //print navbar
 PrintNav();
 //print header
@@ -49,6 +46,3 @@ PrintHeader();
 //print footer
 PrintFooter();
 ?>
-<script src="./src/css/base/Icons/svgxuse.js"></script>
-</body>
-</html>

@@ -20,9 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/security.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/security.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +57,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mLso5Yx3UIDrVULUKsJqZnAsWf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,12 +70,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\artistryhub" />
       <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub\templates" />
       <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub" />
     </key>
@@ -87,6 +101,8 @@
       <workItem from="1611167423302" duration="5559000" />
       <workItem from="1611180968563" duration="8824000" />
       <workItem from="1611190400423" duration="3253000" />
+      <workItem from="1611347265711" duration="8069000" />
+      <workItem from="1611389615063" duration="14769000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -192,6 +208,10 @@
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
     <state x="1297" y="-994" key="IDE.errors.dialog/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611167981251" />
+    <state x="1114" y="443" key="NewPhpFileDialog" timestamp="1611347360235">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1114" y="443" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611347360235" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1611059138535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

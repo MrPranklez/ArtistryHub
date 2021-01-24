@@ -27,10 +27,19 @@ function SaveFormData()
         $pkey = $_POST['pkey'];
 
         //validation
-        $sending_form_uri = $_SERVER['HTTP_REFERER'];
-        CompareWithDatabase( $table, $pkey );
+        if ( $table == "accounts" )
+        {
+            ValidateUsrPassword( $_POST['acc_pass'] );
+            ValidateUsrEmail( $_POST['acc_email'] );
+            CheckUniqueUsrEmail( $_POST['acc_email'] );
+        }
 
-        if ( count($_SESSION['errors']) > 0 ) { header( "Location: " . $sending_form_uri ); exit(); }
+        //terugkeren naar afzender als er een fout is
+        if ( count($_SESSION['errors']) > 0 )
+        {
+            $_SESSION['OLD_POST'] = $_POST;
+            header( "Location: " . $sending_form_uri ); exit();
+        }
 
         //insert or update?
         if ( $_POST["$pkey"] > 0 ) $update = true;
