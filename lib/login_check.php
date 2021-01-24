@@ -5,20 +5,20 @@ require_once "autoload.php";
 
 if ( LoginCheck() )
 {
-    print "LOG IN SUCCESSFUL!";
+    print "Successfully logged in!";
 }
 else
 {
-    print "TOO BAD, SOMETHING WENT WRONG!";
+    print "Too bad, something went wrong!";
 }
 
 function LoginCheck()
 {
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
-        //check CSRF token
+        //controle CSRF token
         if ( ! key_exists("csrf", $_POST)) die("Missing CSRF");
-        if ( ! hash_equals( $_POST['csrf'], $_SESSION['lastest_csrf'] ) ) die("Problem with CSRF");
+        if ( ! hash_equals( $_POST['csrf'], $_SESSION['latest_csrf'] ) ) die("Problem with CSRF");
 
         $_SESSION['latest_csrf'] = "";
 
@@ -29,20 +29,20 @@ function LoginCheck()
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
 
-        //Validation for login form
+        //validation for login form
         if ( true )
         {
             if ( ! key_exists("acc_email", $_POST ) OR strlen($_POST['acc_email']) < 5 )
             {
-                $_SESSION['errors']['acc_pass'] = "This password doesn't match this user!";
+                $_SESSION['errors']['acc_pass'] = "Please enter a password";
             }
             if ( ! key_exists("acc_pass", $_POST ) OR strlen($_POST['acc_pass']) < 8 )
             {
-                $_SESSION['errors']['acc_pass'] = "This password doesn't match this user!";
+                $_SESSION['errors']['acc_pass'] = "This password is incorrect";
             }
         }
 
-        //return error if wrong
+        //return error to user
         if ( key_exists("errors" , $_SESSION ) AND count($_SESSION['errors']) > 0 )
         {
             $_SESSION['OLD_POST'] = $_POST;
@@ -51,9 +51,9 @@ function LoginCheck()
 
         //search user in database
         $email = $_POST['acc_email'];
-        $ww = $_POST['acc_password'];
+        $ww = $_POST['acc_pass'];
 
-        $sql = "SELECT * FROM accounts WHERE acc_email='$email' ";
+        $sql = "SELECT * FROM user WHERE acc_email='$email' ";
         $data = GetData($sql);
 
         if ( count($data) > 0 )

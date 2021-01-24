@@ -13,7 +13,7 @@ PrintNav();
 
 <!--- Login Form --->
 <div class="container pt-3 pb-3 bg-dark text-white">
-<div class='d-flex bg-secondary mt-0 pt-1 pb-1 bgc-'>
+<div class='d-flex bg-secondary mt-0 pt-1 pb-1'>
 
     <?php
         //get data

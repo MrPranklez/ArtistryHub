@@ -68,9 +68,46 @@ function CompareWithDatabase( $table, $pkey ): void
                 }
             }
 
-            //other types ...
         }
     }
+}
+
+function ValidateUsrPassword( $password )
+{
+    if ( strlen($password) < 7 )
+    {
+        $_SESSION['errors']['acc_pass_error'] = "The password needs to contain at least 7 characters";
+        return false;
+    }
+
+    return true;
+}
+
+function ValidateUsrEmail( $email )
+{
+    if (filter_var($email, FILTER_VALIDATE_EMAIL))
+    {
+        return true;
+    }
+    else
+    {
+        $_SESSION['errors']['acc_email_error'] = "This is not a valid email address!";
+        return false;
+    }
+}
+
+function CheckUniqueUsrEmail( $email )
+{
+    $sql = "SELECT * FROM accounts WHERE acc_email='" . $email . "'";
+    $rows = GetData($sql);
+
+    if (count($rows) > 0)
+    {
+        $_SESSION['errors']['acc_email_error'] = "A user has already been registered with this email address!";
+        return false;
+    }
+
+    return true;
 }
 
 function isInt($value) {

@@ -32,7 +32,13 @@ function SaveFormData()
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
         CompareWithDatabase( $table, $pkey );
 
-        //terugkeren naar afzender als er een fout is
+        if ( $table == "accounts" ) {
+            ValidateUsrPassword($_POST['acc_pass']);
+            CheckUniqueUsrEmail($_POST['acc_email']);
+            ValidateUsrEmail($_POST['acc_email']);
+        }
+
+        //return error to user
         if ( count($_SESSION['errors']) > 0 ) { header( "Location: " . $sending_form_uri ); exit(); }
 
         //insert or update?
@@ -49,9 +55,7 @@ function SaveFormData()
         {
 
             //skip non-data fields
-            if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
-
-
+            if ( in_array( $field, ['table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
 
 
             //handle primary key field
@@ -60,7 +64,13 @@ function SaveFormData()
                 if ( $update ) $where = " WHERE $pkey = $value ";
                 continue;
             }
+            if ( $field == "acc_pass" ) //encrypt usr_password
+            {
+                $value = password_hash( $value, PASSWORD_BCRYPT );
+                $keys_values[] = " $field = '$value' " ;
 
+                $_SESSION['msgs'][] = "Thank you for registering";
+            }
             //all other data-fields
             $keys_values[] = " $field = '$value' " ;
         }
