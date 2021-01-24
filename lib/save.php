@@ -53,10 +53,8 @@ function SaveFormData()
 
         foreach ( $_POST as $field => $value )
         {
-
             //skip non-data fields
-            if ( in_array( $field, ['table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
-
+            if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
 
             //handle primary key field
             if ( $field == $pkey )
@@ -64,15 +62,19 @@ function SaveFormData()
                 if ( $update ) $where = " WHERE $pkey = $value ";
                 continue;
             }
+
             if ( $field == "acc_pass" ) //encrypt usr_password
             {
                 $value = password_hash( $value, PASSWORD_BCRYPT );
                 $keys_values[] = " $field = '$value' " ;
 
-                $_SESSION['msgs'][] = "Thank you for registering";
+                $_SESSION['msgs'][] = "Thank you for registering!";
             }
-            //all other data-fields
-            $keys_values[] = " $field = '$value' " ;
+            else //all other data-fields
+            {
+                $keys_values[] = " $field = '$value' " ;
+            }
+
         }
 
         $str_keys_values = implode(" , ", $keys_values );

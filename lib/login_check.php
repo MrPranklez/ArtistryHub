@@ -53,7 +53,7 @@ function LoginCheck()
         $email = $_POST['acc_email'];
         $ww = $_POST['acc_pass'];
 
-        $sql = "SELECT * FROM user WHERE acc_email='$email' ";
+        $sql = "SELECT * FROM accounts WHERE acc_email='$email' ";
         $data = GetData($sql);
 
         if ( count($data) > 0 )
