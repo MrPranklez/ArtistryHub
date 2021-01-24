@@ -1,21 +1,14 @@
 <?php
-error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
-
 require_once 'lib/autoload.php';
-//head printen
-PrintHead();
-?>
 
-<body>
-<?php
+//print head
+PrintHead();
 //print navbar
 PrintNav();
 //print header
 PrintHeader();
+
 ?>
-
-
 
 <!--- vanaf hier column's invoegen --->
 <section class="container pt-3 pb-3 bg-dark text-white">
@@ -42,8 +35,8 @@ PrintHeader();
 
     $extra_elements['csrf_token'] = GenerateCSRF("profile_management.php" );
     //$extra_elements['select_pic'] = MakeSelect( $fkey = 'acc_id',
-        //$value = $row['acc_id'] ,
-        //$sql = "select acc_id, acc_prof_pic from accounts where acc_id=". $_GET['acc_id'] );
+    //$value = $row['acc_id'] ,
+    //$sql = "select acc_id, acc_prof_pic from accounts where acc_id=". $_GET['acc_id'] );
 
     //get template
     $template_accounts = file_get_contents("templates/form_profile.html");
@@ -85,8 +78,5 @@ PrintHeader();
 //print footer
 PrintFooter();
 ?>
-<script src="./src/css/base/Icons/svgxuse.js"></script>
-</body>
-</html>
 
 

@@ -3,19 +3,15 @@ error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 
 require_once 'lib/autoload.php';
+
 //head printen
 PrintHead();
-?>
-
-<body>
-<?php
 //print navbar
 PrintNav();
 //print header
 PrintHeader();
+
 ?>
-
-
 
 <!--- vanaf hier column's invoegen --->
 <section class="container pt-3 pb-3 bg-dark text-white"><h2 class="ml-3">PROFILE MANAGEMENT</h2>
@@ -59,18 +55,11 @@ PrintHeader();
     ?>
 
 
-
-
-
 </section>
-
 
 <?php
 //print footer
 PrintFooter();
 ?>
-<script src="./src/css/base/Icons/svgxuse.js"></script>
-</body>
-</html>
 
 

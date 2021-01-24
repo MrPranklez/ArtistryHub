@@ -48,6 +48,11 @@ function PrintNavbarArtists()
     print $head;
 }
 
+function PrintLogin()
+{
+    $head = file_get_contents("templates/login.html");
+    print $head;
+}
 
 function MergeViewWithData( $template, $data )
 {
@@ -67,6 +72,7 @@ function MergeViewWithData( $template, $data )
 
     return $returnvalue;
 }
+
 function MergeViewWithExtraElements( $template, $elements )
 {
     foreach ( $elements as $key => $element )
