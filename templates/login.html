@@ -1,0 +1,22 @@
+<div class='container col-sm-3 bg-secondary'>
+    <h6 class="text-white pb-0" href="#">Sign in/Sign up</h6>
+    <form id="login" name="login" method="POST" action="lib/save.php">
+
+        <input type="hidden" name="csrf" value="@csrf_token@">
+
+        <div class="form-group row">
+            <label class="mb-0 text-white" for="acc_email">E-mail</label>
+            <input type="email" class="form-control bg-dark text-white" id="acc_email" name="acc_email" value="@acc_email@">
+        </div>
+        <div class="form-group row">
+            <label class="mb-0 text-white" for="acc_pass">Password</label>
+            <input type="password" class="form-control bg-dark text-white" id="acc_pass" name="acc_pass" value="@acc_pass@">
+        </div>
+        <div class="form-group row">
+            <button type="submit" class="btn btn-dark mt-2">Login</button>
+        </div>
+        <div class="form-group row">
+            <a href="./register.php">Register here</a>
+        </div>
+    </form>
+</div>

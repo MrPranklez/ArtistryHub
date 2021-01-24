@@ -1,0 +1,39 @@
+<div class='contianer col-sm-3 bg-secondary'>
+    <h6 class="text-white pb-0" href="#">Sign in/Sign up</h6>
+    <form id="register" name="register" method="POST" action="lib/save.php">
+
+        <input type="hidden" name="csrf" value="@csrf_token@">
+
+        <!-- meta info -->
+        <input type="hidden" id="table" name="table" value="register">
+        <input type="hidden" id="pkey" name="pkey" value="acc_id">
+        <input type="hidden" id="afterinsert" name="afterinsert" value="index.php">
+        <input type="hidden" id="afterupdate" name="afterupdate" value="">
+        <!-- end meta info -->
+
+        <div class="form-group row">
+            <label class="mb-0 text-white" for="acc_email">E-mail</label>
+            <input type="email" class="form-control bg-dark text-white" id="acc_email" name="acc_email" value="@acc_email@">
+            @acc_email_error@
+        </div>
+        <div class="form-group row">
+            <label class="mb-0 text-white" for="acc_name">Username</label>
+            <input type="text" class="form-control bg-dark text-white" id="acc_name" name="acc_name" value="@acc_name@">
+            @acc_name_error@
+        </div>
+        <div class="form-group row">
+            <label class="mb-0 text-white" for="acc_pass">Password</label>
+            <input type="password" class="form-control bg-dark text-white" id="acc_pass" name="acc_pass" value="@acc_pass@">
+            @acc_pass_error@
+        </div>
+        <div class="form-group row">
+            <select class="form-control bg-dark text-white" name="Artist Type" id="art_type" value="@art_type@">
+                <option value=""></option>
+                <option value="Artist">Artist</option>
+                <option value="Musician">Musician</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-dark mt-2">Register</button>
+
+    </form>
+</div>

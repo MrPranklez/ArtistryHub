@@ -1,3 +1,4 @@
+
 <?php
 function GenerateCSRF( string $formname = "noformname" ): string
 {

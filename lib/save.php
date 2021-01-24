@@ -1,4 +1,6 @@
 <?php
+error_reporting( E_ALL );
+ini_set( 'display_errors', 1 );
 require_once "autoload.php";
 
 SaveFormData();
@@ -27,19 +29,11 @@ function SaveFormData()
         $pkey = $_POST['pkey'];
 
         //validation
-        if ( $table == "accounts" )
-        {
-            ValidateUsrPassword( $_POST['acc_pass'] );
-            ValidateUsrEmail( $_POST['acc_email'] );
-            CheckUniqueUsrEmail( $_POST['acc_email'] );
-        }
+        $sending_form_uri = $_SERVER['HTTP_REFERER'];
+        CompareWithDatabase( $table, $pkey );
 
         //terugkeren naar afzender als er een fout is
-        if ( count($_SESSION['errors']) > 0 )
-        {
-            $_SESSION['OLD_POST'] = $_POST;
-            header( "Location: " . $sending_form_uri ); exit();
-        }
+        if ( count($_SESSION['errors']) > 0 ) { header( "Location: " . $sending_form_uri ); exit(); }
 
         //insert or update?
         if ( $_POST["$pkey"] > 0 ) $update = true;
@@ -53,8 +47,12 @@ function SaveFormData()
 
         foreach ( $_POST as $field => $value )
         {
+
             //skip non-data fields
             if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
+
+
+
 
             //handle primary key field
             if ( $field == $pkey )
@@ -77,6 +75,7 @@ function SaveFormData()
 
         //run SQL
         $result = ExecuteSQL( $sql );
+
 
         //output if not redirected
         print $sql ;

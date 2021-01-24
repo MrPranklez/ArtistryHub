@@ -16,23 +16,23 @@ PrintNav();
 <div class='d-flex bg-secondary mt-0 pt-1 pb-1 bgc-'>
 
     <?php
-    //get data
-    $data = [ 0 => [ "acc_email" => "", "acc_pass" => "" ]];
+        //get data
+        $data = [ 0 => [ "acc_email" => "", "acc_pass" => "" ]];
 
-    //get template
-    $output = file_get_contents("templates/login.html");
+        //get template
+        $output = file_get_contents("templates/login.html");
 
-    //add extra elements
-    $extra_elements['csrf_token'] = GenerateCSRF( "login.php"  );
+        //add extra elements
+        $extra_elements['csrf_token'] = GenerateCSRF( "login.php"  );
 
-    //merge
-    $output = MergeViewWithData( $output, $data );
-    $output = MergeViewWithExtraElements( $output, $extra_elements );
+        //merge
+        $output = MergeViewWithData( $output, $data );
+        $output = MergeViewWithExtraElements( $output, $extra_elements );
 
-    print $output;
-    ?>
+        print $output;
+        ?>
 
-</div>
+    </div>
 </div>
 <!--- hier start de footer --->
 
