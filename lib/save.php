@@ -98,6 +98,9 @@ function SaveFormData()
         if ($result AND $table == "projects"){
             $_SESSION['msgs'][] = "Congrats! Project successfully added!";
         }
+        if ($result AND $table == "events"){
+            $_SESSION['msgs'][] = "Congrats! Event successfully added!";
+        }
 
         //output if not redirected
         print $sql ;
