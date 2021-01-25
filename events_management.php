@@ -1,6 +1,5 @@
 <?php
-error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
+
 
 require_once 'lib/autoload.php';
 
@@ -45,12 +44,11 @@ PrintHeader();
     $row = $data[0];
 
     $extra_elements['csrf_token'] = GenerateCSRF("events_management.php" );
+    $extra_elements['select_acc_id'] = $_GET['acc_id'];
     $extra_elements['select_event'] = MakeSelect( $fkey = 'ev_typ_id',
         $value = $row['ev_typ_id'] ,
         $sql = "select typ_id, typ_desc from event_types" );
-    $extra_elements['select_id'] = MakeSelect( $fkey = 'ev_acc_id',
-        $value = $row['ev_acc_id'] ,
-        $sql = "select ev_id, ev_acc_id from events" );
+  ;
 
 
     //get template

@@ -23,7 +23,10 @@ PrintNav();
 <div class='d-flex bg-secondary mt-0 pt-1 pb-1'>
 
     <?php
-
+    if ( isset($_GET['logout']) AND $_GET['logout'] == "true" )
+    {
+        print '<div class="msgs">U bent uitgelogd.</div>';
+    }
         //get data
         $data = [ 0 => [ "acc_email" => "", "acc_pass" => "" ]];
 

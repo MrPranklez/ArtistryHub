@@ -1,21 +1,29 @@
-<nav class="navbar navbar-light bg-danger container d-flex">
-    <a href="index.php"><svg class="icon icon-alphabet_96900" height="40" width="40" fill="white"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-alphabet_96900"></use></svg></a>
-    <a class="navbar-brand text-white flex-grow-1 ml-2">ArtistryHub</a>
-    <button class="btn btn-outline-light mr-2" type="submit"><a href="login.php">LOGIN</a></button>
-    <button class="btn btn-outline-light mr-2" type="submit"><a href="profile_management.php">MANAGEMENT</a></button>
-    <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="darkred" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg>@username@
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="profile.php">My Profile</a>
-                <a class="dropdown-item" href="profile_management.php">My Management</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="logout.php">Logout</a>
-            </div>
-        </li>
-    </ul>
+<nav class="navbar navbar-expand-md container navbar-light bg-danger mb-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <a href="index.php"><svg class="icon icon-alphabet_96900" height="40" width="40" fill="white"><use xlink:href="./src/css/base/Icons/symbol-defs.svg#icon-alphabet_96900"></use></svg></a>
+            <li class="nav-item">
+                <a class="navbar-brand text-white flex-grow-1 ml-2">ArtistryHub</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto d-flex">
+            <button class="btn btn-outline-light mr-2" type="submit"><a href="login.php">LOGIN</a></button>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @nav_name@
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item bg-dark text-white" href="profile.php">Profile</a>
+                    <a class="dropdown-item bg-dark text-white" href="profile_management.php">Management</a>
+                    <a class="dropdown-item bg-dark text-white" href="./logout.php">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </nav>
+

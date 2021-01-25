@@ -70,14 +70,24 @@ function CompareWithDatabase( $table, $pkey ): void
             if ( $type == "DATETIME" )
             {
                 if ( ! isDateTime( $sent_value) )
-                {
-                    $msg = $sent_value . " is geen geldige datum";
+                {   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Werkt op vreemde manier !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    $msg =  $sent_value . " is geen geldige datum";
                     $_SESSION['errors'][ "$fieldname" . "_error" ] = $msg;
-                }
+                }   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             }
 
         }
     }
+}
+function isInt($value) {
+    return is_numeric($value) && floatval(intval($value)) === floatval($value);
+}
+
+function isDate($date) {
+    return date('Y-m-d', strtotime($date)) === $date;
+}
+function isDateTime($datetime) {
+    return gmdate('Y-m-d\TG:i', strtotime($datetime)) === "$datetime";
 }
 
 function ValidateUsrPassword( $password )
@@ -118,16 +128,6 @@ function CheckUniqueUsrEmail( $email )
     return true;
 }
 
-function isInt($value) {
-    return is_numeric($value) && floatval(intval($value)) === floatval($value);
-}
-
-function isDate($date) {
-    return date('Y-m-d', strtotime($date)) === $date;
-}
-function isDateTime($datetime) {
-    return gmdate('Y-m-d\TG:i', strtotime($datetime)) === "$datetime";
-}
 
 function GetFieldType( $definition )
 {

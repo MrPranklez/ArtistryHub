@@ -11,6 +11,16 @@ function PrintHead()
 function PrintNav()
 {
     $navbar = file_get_contents("templates/navbar.html");
+
+    if ( key_exists("user", $_SESSION))
+    {
+        $username = $_SESSION['user']['acc_name'];
+        $navbar = str_replace("@nav_name@", $username, $navbar );
+    } else{
+        $username = "Guest";
+        $navbar = str_replace("@nav_name@", $username, $navbar );
+    }
+
     print $navbar;
 }
 function Printnavbarproject()
