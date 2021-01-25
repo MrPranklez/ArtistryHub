@@ -16,20 +16,18 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login_check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1mLso5Yx3UIDrVULUKsJqZnAsWf" />
   <component name="ProjectLevelVcsManager">
@@ -104,7 +103,7 @@
       <workItem from="1611478317616" duration="1222000" />
       <workItem from="1611479615305" duration="2714000" />
       <workItem from="1611498975065" duration="16973000" />
-      <workItem from="1611568736860" duration="9344000" />
+      <workItem from="1611568736860" duration="10329000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -180,7 +179,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -223,10 +234,11 @@
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
     <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611189846359" />
-    <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611011168032">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
+    <state x="1737" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611593501863">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611011168032" />
+    <state x="1737" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611593501863" />
     <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1" timestamp="1611157805423">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
