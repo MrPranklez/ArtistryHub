@@ -40,8 +40,6 @@ PrintNav();
         $output = MergeViewWithData( $output, $data );
         $output = MergeViewWithExtraElements( $output, $extra_elements );
 
-
-
         print $output;
         ?>
 

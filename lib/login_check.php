@@ -11,7 +11,7 @@ if ( $user )
 {
     $_SESSION['user'] = $user;
     $_SESSION['msgs'][] = "Welcome, " . $_SESSION['user']['acc_name'];
-    header("Location: ../index.php");
+    header("Location: artistry/index.php");
 }
 else
 {
@@ -37,16 +37,15 @@ function LoginCheck()
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
 
         //validation for login form
-        if ( true )
+
+        if ( ! key_exists("acc_email", $_POST ) OR strlen($_POST['acc_email']) < 5 )
         {
-            if ( ! key_exists("acc_email", $_POST ) OR strlen($_POST['acc_email']) < 5 )
-            {
-                $_SESSION['errors']['acc_pass'] = "Please enter a password";
-            }
-            if ( ! key_exists("acc_pass", $_POST ) OR strlen($_POST['acc_pass']) < 8 )
-            {
+        $_SESSION['errors']['acc_email'] = "Please enter a password";
+        }
+
+        if ( ! key_exists("acc_pass", $_POST ) OR strlen($_POST['acc_pass']) < 7 )
+        {
                 $_SESSION['errors']['acc_pass'] = "This password is incorrect";
-            }
         }
 
         //return error to user
@@ -58,7 +57,7 @@ function LoginCheck()
 
         //search user in database
         $email = $_POST['acc_email'];
-        $ww = $_POST['acc_pass'];
+        $password = $_POST['acc_pass'];
 
         $sql = "SELECT * FROM accounts WHERE acc_email='$email' ";
         $data = GetData($sql);
@@ -67,7 +66,7 @@ function LoginCheck()
         {
             foreach ( $data as $row )
             {
-                if ( password_verify( $ww, $row['acc_pass'] ) ) return $row;
+                if ( password_verify( $password, $row['acc_pass'] ) ) return $row;
             }
         }
 
