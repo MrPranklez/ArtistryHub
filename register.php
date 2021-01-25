@@ -47,7 +47,6 @@ PrintNav();
 
     </div>
 </div>
-<!--- hier start de footer --->
 
 <?php
 PrintFooter();
