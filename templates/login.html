@@ -1,8 +1,13 @@
 <div class='container col-sm-3 bg-secondary'>
     <h6 class="text-white pb-0" href="#">Sign in/Sign up</h6>
-    <form id="login" name="login" method="POST" action="lib/save.php">
+    <form id="login" name="login" method="POST" action="lib/login_check.php">
 
         <input type="hidden" name="csrf" value="@csrf_token@">
+
+        <input type="hidden" id="table" name="table" value="accounts">
+        <input type="hidden" id="pkey" name="pkey" value="acc_id">
+        <input type="hidden" id="afterinsert" name="afterinsert" value="profile.php">
+        <input type="hidden" id="afterupdate" name="afterupdate" value="profile.php">
 
         <div class="form-group row">
             <label class="mb-0 text-white" for="acc_email">E-mail</label>
@@ -16,7 +21,7 @@
             <button type="submit" class="btn btn-dark mt-2">Login</button>
         </div>
         <div class="form-group row">
-            <a href="./register.php">Register here</a>
+            <p>Don't have an account yet? <br><a href="./register.php">Register here!</a></p>
         </div>
     </form>
 </div>

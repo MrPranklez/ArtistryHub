@@ -3,6 +3,7 @@ error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 require_once "autoload.php";
 
+$public_access = true;
 SaveFormData();
 
 function SaveFormData()
@@ -32,12 +33,20 @@ function SaveFormData()
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
         CompareWithDatabase( $table, $pkey );
 
-        //terugkeren naar afzender als er een fout is
         if ( count($_SESSION['errors']) > 0 )
         {
             $_SESSION['OLD_POST'] = $_POST;
             header( "Location: " . $sending_form_uri ); exit();
         }
+
+        if ( $table == "accounts" ) {
+            ValidateUsrPassword($_POST['acc_pass']);
+            CheckUniqueUsrEmail($_POST['acc_email']);
+            ValidateUsrEmail($_POST['acc_email']);
+        }
+
+        //return error to user
+        if ( count($_SESSION['errors']) > 0 ) { header( "Location: " . $sending_form_uri ); exit(); }
 
         //insert or update?
         if ( $_POST["$pkey"] > 0 ) $update = true;
@@ -51,10 +60,8 @@ function SaveFormData()
 
         foreach ( $_POST as $field => $value )
         {
-
             //skip non-data fields
             if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
-
 
             //handle primary key field
             if ( $field == $pkey )
@@ -63,8 +70,15 @@ function SaveFormData()
                 continue;
             }
 
-            //all other data-fields
-            $keys_values[] = " $field = '$value' " ;
+            if ( $field == "acc_pass" ) //encrypt usr_password
+            {
+                $value = password_hash( $value, PASSWORD_BCRYPT );
+                $keys_values[] = " $field = '$value' " ;
+            }
+            else //all other data-fields
+            {
+                $keys_values[] = " $field = '$value' " ;
+            }
         }
 
         $str_keys_values = implode(" , ", $keys_values );
@@ -78,13 +92,15 @@ function SaveFormData()
         //run SQL
         $result = ExecuteSQL( $sql );
 
+        if ($result AND $table == "accounts"){
+            $_SESSION['msgs'][] = "Congrats! You have successfully registered!";
+        }
         if ($result AND $table == "projects"){
-            $_SESSION['msgs'][] = "Congrats! Project succesfully added!";
+            $_SESSION['msgs'][] = "Congrats! Project successfully added!";
         }
         if ($result AND $table == "events"){
-            $_SESSION['msgs'][] = "Congrats! Event succesfully added!";
+            $_SESSION['msgs'][] = "Congrats! Event successfully added!";
         }
-
 
         //output if not redirected
         print $sql ;

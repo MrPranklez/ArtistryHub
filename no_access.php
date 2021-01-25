@@ -1,23 +1,28 @@
 <?php
-error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
+
+error_reporting( E_ALL);
+ini_set( 'display_errors',1);
 
 $public_access = true;
 require_once "lib/autoload.php";
 
+//head printen
 PrintHead();
-PrintJumbo( $title = "No Access" );
+//print navbar
+PrintNav();
 ?>
 
-<div class="container">
-    <div class="row">
+    <div class="container pt-3 pb-3 bg-dark text-white">
+        <div class="bg-secondary pt-1 pb-1">
 
-        <?php
-        print "<div class='msgs'>You don''t hav access, try <a href=login.php>logging in</a></div>";
-        ?>
+            <?php
+            print "<div class='msgs'>You don't have access, try logging in <a href=login.php>here.</a></div>";
+            ?>
 
+        </div>
     </div>
-</div>
 
-</body>
-</html>
+<?php
+//print footer
+PrintFooter();
+?>

@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+$request_uri = explode("/", $_SERVER['REQUEST_URI']);
+$app_root = "/" . $request_uri[1];
+
 require_once "connection_data.php";
 require_once "pdo.php";
 require_once "html_functions.php";

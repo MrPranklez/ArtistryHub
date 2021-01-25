@@ -13,7 +13,10 @@ PrintHeader();
 
 ?>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c8b684e5eabe202b13256089ff06114a8ce5bd40
 <section class="container pt-3 pb-3 bg-dark text-white"><h2 class="ml-3">PROJECT MANAGEMENT</h2>
     <?php
 
@@ -52,14 +55,9 @@ PrintHeader();
     $merge_projects = MergeViewWithErrors( $merge_projects, $errors );
     $merge_projects = RemoveEmptyErrorTags( $merge_projects, $rows_projects );
 
-
-
     print $merge_projects;
 
-
-
     ?>
-
 
 </section>
 

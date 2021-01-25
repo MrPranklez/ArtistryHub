@@ -1,24 +1,33 @@
 <?php
 error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
+
+$public_access = true;
 require_once "autoload.php";
 
-if ( LoginCheck() )
+$user = LoginCheck();
+
+/***
+if ( $user )
 {
-    print "LOG IN SUCCESSFUL!";
+    $_SESSION['user'] = $user;
+    $_SESSION['msgs'][] = "Welcome, " . $_SESSION['user']['acc_name'];
+    header("Location: artistry/index.php");
 }
 else
 {
-    print "TOO BAD, SOMETHING WENT WRONG!";
+    unset( $_SESSION['user'] );
+    GoToNoAccess();
 }
+ ***/
 
 function LoginCheck()
 {
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
-        //check CSRF token
+        //controle CSRF token
         if ( ! key_exists("csrf", $_POST)) die("Missing CSRF");
-        if ( ! hash_equals( $_POST['csrf'], $_SESSION['lastest_csrf'] ) ) die("Problem with CSRF");
+        if ( ! hash_equals( $_POST['csrf'], $_SESSION['latest_csrf'] ) ) die("Problem with CSRF");
 
         $_SESSION['latest_csrf'] = "";
 
@@ -29,20 +38,19 @@ function LoginCheck()
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
 
-        //Validation for login form
-        if ( true )
+        //validation for login form
+
+        if ( ! key_exists("acc_email", $_POST ) OR strlen($_POST['acc_email']) < 5 )
         {
-            if ( ! key_exists("acc_email", $_POST ) OR strlen($_POST['acc_email']) < 5 )
-            {
-                $_SESSION['errors']['acc_pass'] = "This password doesn't match this user!";
-            }
-            if ( ! key_exists("acc_pass", $_POST ) OR strlen($_POST['acc_pass']) < 8 )
-            {
-                $_SESSION['errors']['acc_pass'] = "This password doesn't match this user!";
-            }
+        $_SESSION['errors']['acc_email'] = "Please enter a password";
         }
 
-        //return error if wrong
+        if ( ! key_exists("acc_pass", $_POST ) OR strlen($_POST['acc_pass']) < 7 )
+        {
+                $_SESSION['errors']['acc_pass'] = "This password is incorrect";
+        }
+
+        //return error to user
         if ( key_exists("errors" , $_SESSION ) AND count($_SESSION['errors']) > 0 )
         {
             $_SESSION['OLD_POST'] = $_POST;
@@ -51,7 +59,7 @@ function LoginCheck()
 
         //search user in database
         $email = $_POST['acc_email'];
-        $ww = $_POST['acc_password'];
+        $password = $_POST['acc_pass'];
 
         $sql = "SELECT * FROM accounts WHERE acc_email='$email' ";
         $data = GetData($sql);
@@ -60,10 +68,10 @@ function LoginCheck()
         {
             foreach ( $data as $row )
             {
-                if ( password_verify( $ww, $row['acc_pass'] ) ) return true;
+                if ( password_verify( $password, $row['acc_pass'] ) ) return $row;
             }
         }
 
-        return false;
+        return null;
     }
 }

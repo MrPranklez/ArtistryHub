@@ -10,8 +10,12 @@ print $head;
 // functie om navbar.html te printen
 function PrintNav()
 {
-    $head = file_get_contents("templates/navbar.html");
-    print $head;
+    $navbar = file_get_contents("templates/navbar.html");
+
+    $username = $_SESSION['user']['acc_name'] . " " . $_SESSION['user']['acc_name'];
+    $navbar = str_replace("@username@", $username, $navbar );
+
+    print $navbar;
 }
 function Printnavbarproject()
 {
@@ -48,7 +52,10 @@ function PrintNavbarArtists()
     print $head;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c8b684e5eabe202b13256089ff06114a8ce5bd40
 function MergeViewWithData( $template, $data )
 {
     $returnvalue = "";

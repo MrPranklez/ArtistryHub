@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e8806d37-8b7c-4b46-82b6-8789c91ad0b8" name="ArtistryHub" url="http://ftp.wdev.be">
+        <fileTransfer rootFolder="/ArtistryHub" host="ftp.wdev.be" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

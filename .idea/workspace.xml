@@ -16,14 +16,20 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/form_elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/form_elements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login_check.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +75,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub" />
       <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\artistryhub" />
       <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub\templates" />
+      <recent name="C:\Bitnami\wampstack-7.4.11-0\apache2\htdocs\ArtistryHub" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,8 +101,10 @@
       <workItem from="1611190400423" duration="3253000" />
       <workItem from="1611347265711" duration="8069000" />
       <workItem from="1611389615063" duration="14769000" />
-      <workItem from="1611478317616" duration="669000" />
-      <workItem from="1611581041975" duration="13623000" />
+      <workItem from="1611478317616" duration="1222000" />
+      <workItem from="1611479615305" duration="2714000" />
+      <workItem from="1611498975065" duration="16973000" />
+      <workItem from="1611568736860" duration="13976000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -161,49 +169,7 @@
       <option name="project" value="LOCAL" />
       <updated>1611193216877</updated>
     </task>
-    <task id="LOCAL-00010" summary="projects management + old post ok, start events_management">
-      <created>1611529851723</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1611529851723</updated>
-    </task>
-    <task id="LOCAL-00011" summary="events management werkt enkel de datetime goedzetten">
-      <created>1611537640188</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1611537640188</updated>
-    </task>
-    <task id="LOCAL-00012" summary="testing dates">
-      <created>1611586589416</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1611586589416</updated>
-    </task>
-    <task id="LOCAL-00013" summary="dates ok, automatic fkey in from(hidden)">
-      <created>1611589923788</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1611589923788</updated>
-    </task>
-    <task id="LOCAL-00014" summary="automatic fkey work only for fkey 2 MUSE">
-      <created>1611592356912</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1611592356912</updated>
-    </task>
-    <task id="LOCAL-00015" summary="automatic fkey work only for fkey 2 MUSE">
-      <created>1611594252347</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1611594252347</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +180,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -229,18 +207,13 @@
     <MESSAGE value="profile connection database ok" />
     <MESSAGE value="indexlinks linked with profile page" />
     <MESSAGE value="rdy to start with forms" />
-    <MESSAGE value="projects management + old post ok, start events_management" />
-    <MESSAGE value="events management werkt enkel de datetime goedzetten" />
-    <MESSAGE value="testing dates" />
-    <MESSAGE value="dates ok, automatic fkey in from(hidden)" />
-    <MESSAGE value="automatic fkey work only for fkey 2 MUSE" />
-    <option name="LAST_COMMIT_MESSAGE" value="automatic fkey work only for fkey 2 MUSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="rdy to start with forms" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611594251476">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611193216304">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611594251476" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611193216304" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
@@ -249,26 +222,36 @@
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
     <state x="1297" y="-994" key="IDE.errors.dialog/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611167981251" />
+    <state x="488" y="0" key="MergeDialog" timestamp="1611594141574">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="488" y="0" key="MergeDialog/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611594141574" />
+    <state x="1158" y="191" key="MultipleFileMergeDialog" timestamp="1611594315030">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1158" y="191" key="MultipleFileMergeDialog/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611594315030" />
     <state x="1114" y="443" key="NewPhpFileDialog" timestamp="1611478477992">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1114" y="443" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611478477992" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1611059138535">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="462" y="72" key="SettingsEditor" timestamp="1611573533662">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611059138535" />
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611594259145">
+    <state x="462" y="72" key="SettingsEditor/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611573533662" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611189846359">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611594259145" />
-    <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611011168032">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611189846359" />
+    <state x="1737" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611594295579">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611011168032" />
-    <state x="-331" y="-1440" width="1294" height="1407" key="dock-window-1" timestamp="1611581428026">
+    <state x="1737" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611594295579" />
+    <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1" timestamp="1611157805423">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="-331" y="-1440" width="1294" height="1407" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611581428026" />
+    <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611157805423" />
     <state x="371" y="-14" width="811" height="910" maximized="true" key="dock-window-2" timestamp="1609701665354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -281,5 +264,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="389" y="0" width="911" height="910" key="dock-window-4/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609703634587" />
+    <state x="1057" y="368" width="585" height="534" key="find.popup" timestamp="1611596563125">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1057" y="368" width="585" height="534" key="find.popup/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611596563125" />
+    <state x="805" y="157" key="ftp.server.browser" timestamp="1611573442624">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="805" y="157" key="ftp.server.browser/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611573442624" />
+    <state x="936" y="240" key="run.anything.popup" timestamp="1611594492990">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="936" y="240" key="run.anything.popup/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611594492990" />
   </component>
 </project>
