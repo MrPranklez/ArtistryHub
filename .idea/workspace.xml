@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1611347265711" duration="8069000" />
       <workItem from="1611389615063" duration="14769000" />
       <workItem from="1611478317616" duration="669000" />
-      <workItem from="1611581041975" duration="9345000" />
+      <workItem from="1611581041975" duration="10840000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -189,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611589923788</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="automatic fkey work only for fkey 2 MUSE">
+      <created>1611592356912</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611592356912</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,13 +223,14 @@
     <MESSAGE value="events management werkt enkel de datetime goedzetten" />
     <MESSAGE value="testing dates" />
     <MESSAGE value="dates ok, automatic fkey in from(hidden)" />
-    <option name="LAST_COMMIT_MESSAGE" value="dates ok, automatic fkey in from(hidden)" />
+    <MESSAGE value="automatic fkey work only for fkey 2 MUSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="automatic fkey work only for fkey 2 MUSE" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611589923216">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611592356368">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611589923216" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611592356368" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
@@ -242,10 +247,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611059138535" />
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611589933739">
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611592369574">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611589933739" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611592369574" />
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611011168032">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
