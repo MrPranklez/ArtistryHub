@@ -7,6 +7,7 @@ require_once "autoload.php";
 
 $user = LoginCheck();
 
+/***
 if ( $user )
 {
     $_SESSION['user'] = $user;
@@ -18,6 +19,7 @@ else
     unset( $_SESSION['user'] );
     GoToNoAccess();
 }
+ ***/
 
 function LoginCheck()
 {

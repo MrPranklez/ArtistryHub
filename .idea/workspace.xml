@@ -29,14 +29,7 @@
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/form_elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/form_elements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbarartists_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbarartists_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login_check.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +104,7 @@
       <workItem from="1611478317616" duration="1222000" />
       <workItem from="1611479615305" duration="2714000" />
       <workItem from="1611498975065" duration="16973000" />
-      <workItem from="1611568736860" duration="12366000" />
+      <workItem from="1611568736860" duration="13976000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -271,10 +264,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="389" y="0" width="911" height="910" key="dock-window-4/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609703634587" />
-    <state x="1057" y="368" width="585" height="534" key="find.popup" timestamp="1611579515023">
+    <state x="1057" y="368" width="585" height="534" key="find.popup" timestamp="1611596563125">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1057" y="368" width="585" height="534" key="find.popup/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611579515023" />
+    <state x="1057" y="368" width="585" height="534" key="find.popup/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611596563125" />
     <state x="805" y="157" key="ftp.server.browser" timestamp="1611573442624">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
