@@ -13,7 +13,7 @@ PrintHeader();
 
 ?>
 
-<!--- vanaf hier column's invoegen --->
+
 <section class="container pt-3 pb-3 bg-dark text-white"><h2 class="ml-3">PROJECT MANAGEMENT</h2>
     <?php
 

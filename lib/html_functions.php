@@ -48,11 +48,6 @@ function PrintNavbarArtists()
     print $head;
 }
 
-function PrintLogin()
-{
-    $head = file_get_contents("templates/login.html");
-    print $head;
-}
 
 function MergeViewWithData( $template, $data )
 {

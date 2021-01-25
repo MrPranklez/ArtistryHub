@@ -20,8 +20,3 @@ function MakeSelect( $fkey, $value, $sql )
 
     return $select;
 }
-
-function MakeCheckbox( )
-{
-
-}
