@@ -67,6 +67,14 @@ function CompareWithDatabase( $table, $pkey ): void
                     $_SESSION['errors'][ "$fieldname" . "_error" ] = $msg;
                 }
             }
+            if ( $type == "DATETIME" )
+            {
+                if ( ! isDateTime( $sent_value) )
+                {
+                    $msg = $sent_value . " is geen geldige datum";
+                    $_SESSION['errors'][ "$fieldname" . "_error" ] = $msg;
+                }
+            }
 
             //other types ...
         }
@@ -79,6 +87,9 @@ function isInt($value) {
 
 function isDate($date) {
     return date('Y-m-d', strtotime($date)) === $date;
+}
+function isDateTime($datetime) {
+    return gmdate('Y-m-d h:i \G\M\T', strtotime($datetime)) === $datetime;
 }
 
 function GetFieldType( $definition )

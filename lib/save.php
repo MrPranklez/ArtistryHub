@@ -56,8 +56,6 @@ function SaveFormData()
             if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate', 'csrf' ] ) ) continue;
 
 
-
-
             //handle primary key field
             if ( $field == $pkey )
             {
@@ -82,6 +80,9 @@ function SaveFormData()
 
         if ($result AND $table == "projects"){
             $_SESSION['msgs'][] = "Congrats! Project succesfully added!";
+        }
+        if ($result AND $table == "events"){
+            $_SESSION['msgs'][] = "Congrats! Event succesfully added!";
         }
 
 

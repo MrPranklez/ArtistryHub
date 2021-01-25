@@ -21,14 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611193216877</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="projects management + old post ok, start events_management">
+      <created>1611529851723</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611529851723</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,13 +193,14 @@
     <MESSAGE value="profile connection database ok" />
     <MESSAGE value="indexlinks linked with profile page" />
     <MESSAGE value="rdy to start with forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="rdy to start with forms" />
+    <MESSAGE value="projects management + old post ok, start events_management" />
+    <option name="LAST_COMMIT_MESSAGE" value="projects management + old post ok, start events_management" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611193216304">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611529851134">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611193216304" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611529851134" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
