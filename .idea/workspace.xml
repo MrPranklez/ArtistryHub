@@ -27,19 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/events_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/access_control.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/access_control.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611607043052</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="login = rdy">
+      <created>1611615483939</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611615483939</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,10 +223,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="login = rdy" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611607042457">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611615483145">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611607042457" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611615483145" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
@@ -257,10 +252,10 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611059138535" />
     <state x="462" y="72" key="SettingsEditor/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611573533662" />
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611607094993">
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611615588773">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611607094993" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611615588773" />
     <state x="1737" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611594295579">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

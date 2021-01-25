@@ -15,6 +15,6 @@ function GoToNoAccess()
 {
     global $app_root;
 
-    header("Location: " . $app_root . "/no_access.php");
+    header("Location: ./no_access.php");
     exit;
 }
