@@ -22,6 +22,7 @@
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form_events.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_events.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <workItem from="1611347265711" duration="8069000" />
       <workItem from="1611389615063" duration="14769000" />
       <workItem from="1611478317616" duration="669000" />
-      <workItem from="1611581041975" duration="4949000" />
+      <workItem from="1611581041975" duration="7635000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611537640188</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testing dates">
+      <created>1611586589416</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611586589416</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,13 +209,14 @@
     <MESSAGE value="rdy to start with forms" />
     <MESSAGE value="projects management + old post ok, start events_management" />
     <MESSAGE value="events management werkt enkel de datetime goedzetten" />
-    <option name="LAST_COMMIT_MESSAGE" value="events management werkt enkel de datetime goedzetten" />
+    <MESSAGE value="testing dates" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing dates" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611537639590">
+    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611586588858">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611537639590" />
+    <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611586588858" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
@@ -224,10 +233,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611059138535" />
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611537654261">
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2" timestamp="1611586598901">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
-    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611537654261" />
+    <state x="1217" y="-1004" key="Vcs.Push.Dialog.v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611586598901" />
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611011168032">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
