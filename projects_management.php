@@ -34,8 +34,13 @@ PrintHeader();
     }
     else $rows_projects = [ 0 => [ "proj_acc_id" => "", "proj_name" => "", "proj_desc" => "", "proj_date" => "" ]];
 
+    $data = GetData( "select * from projects where proj_acc_id=". $_GET['acc_id']);
+    $row = $data[0];
 
     $extra_elements['csrf_token'] = GenerateCSRF("project_management.php" );
+    $extra_elements['select_acc_id'] = MakeSelect( $fkey = 'proj_acc_id',
+        $value = $row['proj_acc_id'] ,
+        $sql = "select proj_id, proj_acc_id from projects" );
 
     //get template
     $template_projects = file_get_contents("templates/form_projects.html");

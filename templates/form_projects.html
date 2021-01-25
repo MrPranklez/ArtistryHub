@@ -15,11 +15,18 @@
         <input type="hidden" name="csrf" value="@csrf_token@">
         <!--end security-->
 
-        <div class="form-group mb-2">
+        <div  class="form-group">
+            <label for="proj_acc_id" class="col-sm-4 col-form-label pl-0 ml-0 mb-0 pb-0">PROJECT ACCOUNT ID</label>
+            <div class="col-sm-8 pl-0 ml-0">
+                @select_acc_id@
+                @proj_acc_id_error@
+            </div>
+        </div>
+        <!--<div class="form-group mb-2">
             <label class="mb-0 text-white" for="proj_acc_id">PROJECT ACCOUNT ID</label>
             <input type="number" class="form-control bg-dark text-white" id="proj_acc_id" name="proj_acc_id" value="@proj_acc_id@">
             @proj_acc_id_error@
-        </div>
+        </div>-->
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="proj_name">PROJECT NAME</label>
             <input type="text" class="form-control bg-dark text-white" id="proj_name" name="proj_name" value="@proj_name@">
