@@ -1,6 +1,8 @@
 <?php
 error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
+
+$public_access = true;
 require_once "autoload.php";
 
 $user = LoginCheck();
@@ -65,10 +67,10 @@ function LoginCheck()
         {
             foreach ( $data as $row )
             {
-                if ( password_verify( $ww, $row['acc_pass'] ) ) return true;
+                if ( password_verify( $ww, $row['acc_pass'] ) ) return $row;
             }
         }
 
-        return false;
+        return null;
     }
 }

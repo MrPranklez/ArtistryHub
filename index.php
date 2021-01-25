@@ -1,4 +1,9 @@
 <?php
+
+error_reporting( E_ALL);
+ini_set( 'display_errors',1);
+
+$public_access = true;
 require_once 'lib/autoload.php';
 //head printen
 PrintHead();
@@ -12,8 +17,6 @@ PrintHeader();
 //                                          PAGINA KLAAR
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ?>
-
-
 
             <?php
 
@@ -43,8 +46,6 @@ PrintHeader();
         </div>  <!-- kan niet mee in template gestoken worden door herhaling van templates -->
     </div>
 </section>
-
-
 
 
 <?php
