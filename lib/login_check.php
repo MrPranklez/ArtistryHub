@@ -7,19 +7,19 @@ require_once "autoload.php";
 
 $user = LoginCheck();
 
-/***
+
 if ( $user )
 {
     $_SESSION['user'] = $user;
     $_SESSION['msgs'][] = "Welcome, " . $_SESSION['user']['acc_name'];
-    header("Location: artistry/index.php");
+    header("Location: ../index.php");
 }
 else
 {
     unset( $_SESSION['user'] );
     GoToNoAccess();
 }
- ***/
+
 
 function LoginCheck()
 {
