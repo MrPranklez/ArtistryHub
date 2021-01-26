@@ -1,6 +1,7 @@
 <?php
 
-// functie om de head te printen van head.html
+// functie om de head te printen van head.htmlµ
+$public_access = true;
 function PrintHead()
 {
     $head = file_get_contents("templates/head.html");
@@ -57,6 +58,7 @@ function PrintNavbarArtists()
     $head = file_get_contents("templates/navbarartists_index.html");
     print $head;
 }
+
 
 function MergeViewWithData( $template, $data )
 {

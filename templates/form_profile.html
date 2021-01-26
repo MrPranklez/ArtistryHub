@@ -20,13 +20,9 @@
 
         <!--security-->
         <input type="hidden" name="csrf" value="@csrf_token@">
+        <input type="hidden" id="acc_id" name="acc_id" value="@acc_id@">
         <!--end security-->
 
-        <div style="display: none" class="form-group mb-2">
-            <label class="mb-0 text-white" for="acc_id">BAND ID</label>
-            <input type="text" class="form-control bg-dark text-white" id="acc_id" name="acc_id" value="@acc_id@">
-            @acc_id_error@
-        </div>
         <div class="form-group mb-2">
             <label class="mb-0 text-white" for="acc_name">BAND NAME</label>
             <input type="text" class="form-control bg-dark text-white" id="acc_name" name="acc_name" value="@acc_name@">

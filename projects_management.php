@@ -18,7 +18,7 @@ PrintHeader();
 
 
 
-    if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
+
 
 
     if ( count($old_post) > 0 )
@@ -37,7 +37,7 @@ PrintHeader();
 
 
     $extra_elements['csrf_token'] = GenerateCSRF("project_management.php" );
-    $extra_elements['select_acc_id'] = $_GET['acc_id'];
+    $extra_elements['select_acc_id'] = $_SESSION['user']['acc_id'];
 
 
     //get template

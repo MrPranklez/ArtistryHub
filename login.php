@@ -16,17 +16,20 @@ PrintNav();
 <div class="container pt-3 pb-3 bg-dark text-white">
     <?php
     foreach ( $msgs as $msg){
-        print '<div class="container bg-dark pt-4 pb-1 mb-0">
+        print '<div class="bg-dark pt-4 pb-1 mb-0">
             <div class="msgs alert alert-success" role="alert">' . $msg . '</div>
             </div>';}
+    if ( isset($_GET['logout']) AND $_GET['logout'] == "true" )
+    {
+        print '<div class="bg-dark pt-4 pb-1 mb-0">
+            <div class="msgs alert alert-success" role="alert">You succesfully logged out! See you soon!</div>
+            </div>';
+    }
     ?>
 <div class='d-flex bg-secondary mt-0 pt-1 pb-1'>
 
     <?php
-    if ( isset($_GET['logout']) AND $_GET['logout'] == "true" )
-    {
-        print '<div class="msgs">U bent uitgelogd.</div>';
-    }
+
         //get data
         $data = [ 0 => [ "acc_email" => "", "acc_pass" => "" ]];
 

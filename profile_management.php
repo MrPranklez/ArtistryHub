@@ -1,5 +1,7 @@
 <?php
 require_once 'lib/autoload.php';
+error_reporting( E_ALL );
+ini_set( 'display_errors', 1 );
 
 //print head
 PrintHead();
@@ -15,18 +17,9 @@ PrintHeader();
     <h2 class="ml-3">PROFILE MANAGEMENT</h2>
     <?php
 
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    //                              ENKEL IN DE PAGINA GERAKEN MET LOGIN ID
-    //                                  ZODAT DE JUISTE GEGEVENS ZICHTBAAR ZIJN VAN JE ACC_ID
-    //
-    //                         VOEG EEN ADD BUTTON TOE OM GEGEVENS TOE TE VOEGEN
-    //                              DE SAFEBUTTON VERVANGT HIER GEGEWOON GEGEVENS
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-    if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
 
     //get the right data from the database
-    $rows_accounts = GetData( "select * from accounts where acc_id =" . $_GET['acc_id'] );///// tijdelijk op 1 gezet om te testen
+    $rows_accounts =GetData( "select * from accounts where acc_id=" . $_SESSION['user']['acc_id'] );
 
     $extra_elements['csrf_token'] = GenerateCSRF("profile_management.php" );
 
