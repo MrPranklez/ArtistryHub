@@ -30,11 +30,17 @@ PrintNav();
         }
         else $data = [ 0 => [ "acc_email" => "", "acc_name" => "", "acc_pass" => "", "acc_art_typ_id" => "", "acc_bio" => "", "acc_desc" => "", "acc_prof_pic" => ""]];
 
+        $art_type_data = GetData( "select acc_art_typ_id from accounts");
+        $row = $art_type_data[0];
+
         //get template
         $output = file_get_contents("templates/register.html");
 
         //add extra elements
         $extra_elements['csrf_token'] = GenerateCSRF( "register.php"  );
+        $extra_elements['select_artist'] = MakeSelect( $fkey = 'acc_art_typ_id',
+            $value = $row['acc_art_typ_id'] ,
+            $sql = "select art_id, art_desc from artist_type" );
 
         //merge
         $output = MergeViewWithData( $output, $data );

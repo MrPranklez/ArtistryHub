@@ -5,17 +5,15 @@ ini_set( 'display_errors',1);
 
 $public_access = true;
 require_once 'lib/autoload.php';
+
 //head printen
 PrintHead();
-
 //print navbar
 PrintNav();
 //print header
 PrintHeader();
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//                                          PAGINA KLAAR
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 ?>
 
             <?php

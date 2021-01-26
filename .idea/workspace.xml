@@ -27,7 +27,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/events_management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/access_control.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/access_control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile_management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects_management.php" beforeDir="false" afterPath="$PROJECT_DIR$/projects_management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +115,8 @@
       <workItem from="1611479615305" duration="2714000" />
       <workItem from="1611498975065" duration="16973000" />
       <workItem from="1611568736860" duration="13976000" />
+      <workItem from="1611616095072" duration="433000" />
+      <workItem from="1611617062005" duration="8055000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -261,10 +275,11 @@
     </state>
     <state x="1413" y="-823" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611011168032" />
     <state x="1737" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611594295579" />
-    <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1" timestamp="1611157805423">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
+    <state x="1273" y="0" width="1294" height="1047" key="dock-window-1" timestamp="1611619579788">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="-322" y="-1397" width="830" height="1118" key="dock-window-1/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611157805423" />
+    <state x="1273" y="0" width="1294" height="1047" key="dock-window-1/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611619579788" />
     <state x="371" y="-14" width="811" height="910" maximized="true" key="dock-window-2" timestamp="1609701665354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -277,10 +292,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="389" y="0" width="911" height="910" key="dock-window-4/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1609703634587" />
-    <state x="1057" y="368" width="585" height="534" key="find.popup" timestamp="1611596563125">
+    <state x="1057" y="368" width="585" height="534" key="find.popup" timestamp="1611624290522">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1057" y="368" width="585" height="534" key="find.popup/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611596563125" />
+    <state x="1057" y="368" width="585" height="534" key="find.popup/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611624290522" />
     <state x="805" y="157" key="ftp.server.browser" timestamp="1611573442624">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

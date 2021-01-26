@@ -16,11 +16,6 @@ PrintHeader();
 <section class="container pt-3 pb-3 bg-dark text-white"><h2 class="ml-3">PROJECT MANAGEMENT</h2>
     <?php
 
-
-
-    if ( ! is_numeric( $_GET['acc_id']) ) die("Ongeldig argument " . $_GET['acc_id'] . " opgegeven");
-
-
     if ( count($old_post) > 0 )
     {
         $rows_projects = [ 0 => [
@@ -33,7 +28,7 @@ PrintHeader();
     }
     else $rows_projects = [ 0 => [ "proj_acc_id" => "", "proj_name" => "", "proj_desc" => "", "proj_date" => "" ]];
 
-    $data = GetData( "select * from projects where proj_acc_id=". $_GET['acc_id']);
+    $data = GetData( "select * from projects where proj_acc_id=". $_SESSION['user']['acc_id']);
 
 
     $extra_elements['csrf_token'] = GenerateCSRF("project_management.php" );

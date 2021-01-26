@@ -27,11 +27,6 @@
             @acc_pass_error@
         </div>
         <div class="form-group row">
-            <label class="mb-0 text-white" for="acc_art_typ_id">Artist Type ID</label>
-            <input type="number" class="form-control bg-dark text-white" id="acc_art_typ_id" name="acc_art_typ_id" value="@acc_art_typ_id@">
-            @acc_art_typ_id_error@
-        </div>
-        <div class="form-group row">
             <label class="mb-0 text-white" for="acc_desc">SHORT DESCRIPTION</label>
             <input type="text" class="form-control bg-dark text-white" id="acc_desc" name="acc_desc" value="@acc_desc@">
             @acc_desc_error@
@@ -45,6 +40,13 @@
             <label class="mb-0 text-white" for="acc_prof_pic">PROFILE PICTURE</label>
             <input type="text" class="form-control bg-dark text-white" id="acc_prof_pic" name="acc_prof_pic" value="@acc_prof_pic@">
             @acc_prof_pic_error@
+        </div>
+        <div class="form-group col-6 mb-0 pr-0 pl-0 ml-0 mr-0 pr-0">
+            <label for="acc_art_typ_id" class="mb-0 text-white">ARTIST TYPE</label>
+            <div class="col-sm-8 pl-0 ml-0">
+                @select_artist@
+                @acc_art_typ_id_error@
+            </div>
         </div>
         <button type="submit" class="btn btn-dark mt-2">Register</button>
 

@@ -1,6 +1,5 @@
 <?php
 
-
 require_once "lib/autoload.php";
 
 unset($_SESSION['user']);
