@@ -29,7 +29,7 @@ PrintHeader();
         ];
     } else $rows_events = [ 0 => [ "ev_acc_id" => "", "ev_typ_id" => "", "ev_loc" => "", "ev_link" => "", "ev_start_time" => "", "ev_end_time" => "", "ev_price" => "" ]];
 
-    $data = GetData( "select * from events where ev_acc_id=". $_GET['acc_id']);
+    $data = GetData( "select * from events where ev_acc_id=". $_SESSION['user']['acc_id']);
     $row = $data[0];
 
     $extra_elements['csrf_token'] = GenerateCSRF("events_management.php" );
