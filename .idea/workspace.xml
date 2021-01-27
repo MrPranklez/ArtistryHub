@@ -28,6 +28,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b4bbb738-d8ff-4a7b-8ac0-08e235d07457" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form_projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,7 @@
       <workItem from="1611479615305" duration="2714000" />
       <workItem from="1611498975065" duration="16973000" />
       <workItem from="1611568736860" duration="13976000" />
-      <workItem from="1611654789885" duration="2303000" />
+      <workItem from="1611654789885" duration="4467000" />
     </task>
     <task id="LOCAL-00001" summary="styling indexpage ready">
       <created>1609703169034</created>
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611629538857</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="test commit">
+      <created>1611759256841</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611759256841</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,13 +254,15 @@
     <MESSAGE value="logout rdy, site basically ready" />
     <MESSAGE value="basically ready" />
     <MESSAGE value="1 acces works" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 acces works" />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1301" y="-1168" key="CommitChangelistDialog2" timestamp="1611629538162">
-      <screen x="-324" y="-1440" width="2560" height="1400" />
+    <state x="766" y="0" key="CommitChangelistDialog2" timestamp="1611759255975">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1301" y="-1168" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611629538162" />
+    <state x="766" y="0" key="CommitChangelistDialog2/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611759255975" />
     <state x="736" y="-985" key="FileChooserDialogImpl" timestamp="1609942457232">
       <screen x="-324" y="-1440" width="2560" height="1400" />
     </state>
@@ -269,9 +280,10 @@
     </state>
     <state x="834" y="-1183" key="MultipleFileMergeDialog/0.0.1536.824/-324.-1440.2560.1400@-324.-1440.2560.1400" timestamp="1611628871249" />
     <state x="1158" y="191" key="MultipleFileMergeDialog/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611594315030" />
-    <state x="1114" y="443" key="NewPhpFileDialog" timestamp="1611478477992">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="668" y="351" key="NewPhpFileDialog" timestamp="1611759232224">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="668" y="351" key="NewPhpFileDialog/0.0.1536.824/-324.-1440.2560.1400@0.0.1536.824" timestamp="1611759232224" />
     <state x="1114" y="443" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1920.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1611478477992" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1611759211243">
       <screen x="0" y="0" width="1536" height="824" />

@@ -2,7 +2,7 @@
 session_start();
 
 $request_uri = explode("/", $_SERVER['REQUEST_URI']);
-$app_root = "/" . $request_uri[1] . "/" . $request_uri[2];
+$app_root = "/" . $request_uri[1] ;
 
 require_once "connection_data.php";
 require_once "pdo.php";
