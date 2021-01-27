@@ -103,9 +103,9 @@ function SaveFormData()
         }
 
         //output if not redirected
-        print $sql ;
-        print "<br>";
-        print $result->rowCount() . " records affected";
+        //print $sql ;
+        //print "<br>";
+        //print $result->rowCount() . " records affected";
 
         //redirect after insert or update
         if ( $insert AND $_POST["afterinsert"] > "" ) header("Location: ../" . $_POST["afterinsert"] );
