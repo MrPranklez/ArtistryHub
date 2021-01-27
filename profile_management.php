@@ -17,15 +17,14 @@ PrintHeader();
     <h2 class="ml-3">PROFILE MANAGEMENT</h2>
     <?php
 
-    if(!key_exists('acc_id',$_SESSION['user'])){
-        GoToNoAccess();
-    }else{
+    if(!key_exists('acc_id',$_SESSION['user'])) GoToNoAccess();
 
-    }
     //get the right data from the database
     $rows_accounts =GetData( "select * from accounts where acc_id=" . $_SESSION['user']['acc_id'] );
 
+
     $extra_elements['csrf_token'] = GenerateCSRF("profile_management.php" );
+    $extra_elements['select_acc_id'] = $_SESSION['user']['acc_id'];
 
     //get template
     $template_accounts = file_get_contents("templates/form_profile.html");
